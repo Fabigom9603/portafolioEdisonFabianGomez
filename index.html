@@ -339,6 +339,151 @@
 										</div>
 									</section>
 
+									<!--Puzzle: Regulación de Voltaje y Amperaje-->
+
+									<section class="container my-5">
+										<div class="row align-items-center">
+
+											<!-- Columna izquierda: descripción -->
+											<div class="col-md-6">
+											<h5 class="text-danger">🔌 Puzzle de Voltaje y Amperaje</h5>
+											<p>
+												Desarrollé un puzzle interactivo donde el jugador debe <strong>manipular una serie de interruptores</strong> (switches) 
+												para lograr que una aguja indicadora se estabilice dentro de una zona marcada, simulando correctamente 
+												los niveles de <strong>voltaje y amperaje</strong> requeridos por un sistema eléctrico.
+											</p>
+											<p>
+												El objetivo del puzzle es <strong>alcanzar el equilibrio exacto</strong> activando o desactivando combinaciones específicas 
+												de interruptores que afectan los parámetros eléctricos del panel.
+											</p>
+											<p>
+												Una vez el puzzle es resuelto:
+											</p>
+											<ul>
+												<li>Se activa una <strong>transición de cámara cinemática</strong> que enfoca una puerta cerrada.</li>
+												<li>La puerta realiza una <strong>animación de apertura</strong>.</li>
+												<li>La cámara retorna al jugador, permitiéndole continuar con la exploración.</li>
+											</ul>
+											<p>
+												Este sistema integra lógica de interacción, condiciones de resolución y feedback visual a través de cámaras y animaciones.
+											</p>
+											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleElectricidad" 
+												target="_blank" 
+												class="btn btn-outline-info">Ver código en GitHub</a>
+											</div>
+
+											<!-- Columna derecha: video o gif -->
+											<div class="col-md-6 text-center">
+											<iframe width="100%" height="315" 
+											src="https://www.youtube.com/embed/KTRciKPKEgE?si=6tz43hF6kt6VyMMj" 
+											title="YouTube video player" frameborder="0" allow="accelerometer; 
+											autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+											web-share" referrerpolicy="strict-origin-when-cross-origin" 
+											allowfullscreen>
+											</iframe>
+											</div>
+
+										</div>
+									</section>
+
+									<!--Puzzle Teclado numerico-->
+									<section class="container my-5">
+										<div class="row align-items-center">
+
+											<!-- Columna izquierda: descripción -->
+											<div class="col-md-6">
+											<h5 class="text-danger">🔢 Puzzle Numérico de Suma</h5>
+											<p>
+												Implementé un puzzle de lógica en el que el jugador debe 
+												<strong>seleccionar números</strong> en un panel numérico y 
+												<strong>sumar correctamente</strong> para alcanzar el valor objetivo 
+												mostrado en pantalla.
+											</p>
+											<p>
+												El panel incluye:
+											</p>
+											<ul>
+												<li>Un <strong>display central</strong> que muestra el valor objetivo de la suma.</li>
+												<li>Un <strong>teclado numérico</strong> con los dígitos del 1 al 9.</li>
+												<li>Un <strong>contador de intentos</strong> que limita a 10 el número de selecciones posibles.</li>
+											</ul>
+											<p>
+												El jugador debe planificar cuidadosamente la combinación de números 
+												para llegar exactamente al valor requerido utilizando todos los intentos.
+											</p>
+											<p>
+												Una vez resuelto el puzzle:
+											</p>
+											<ul>
+												<li>Se activa una <strong>transición de cámara</strong> que muestra el resultado en el entorno (por ejemplo, una puerta desbloqueándose).</li>
+												<li>Se habilitan nuevas áreas del escenario para el jugador.</li>
+											</ul>
+											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleNumeros" 
+												target="_blank" 
+												class="btn btn-outline-info">Ver código en GitHub</a>
+											</div>
+
+											<!-- Columna derecha: video o imagen -->
+											<div class="col-md-6 text-center">
+											<iframe width="100%" height="315" 
+											src="https://www.youtube.com/embed/2ni7A9pLS8s?si=9SRsiTddlSXs_yaM" 
+											title="YouTube video player" frameborder="0" allow="accelerometer; 
+											autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+											web-share" referrerpolicy="strict-origin-when-cross-origin" 
+											allowfullscreen>
+											</iframe>
+											</div>
+
+										</div>
+									</section>
+									<!--Puzzle Rompecabezas-->
+									<section class="container my-5">
+										<div class="row align-items-center">
+
+											<!-- Columna izquierda: descripción -->
+											<div class="col-md-6">
+											<h5 class="text-danger">🧩 Puzzle de Reorganización tipo 15</h5>
+											<p>
+												Implementé un rompecabezas inspirado en el clásico <strong>“15 Puzzle”</strong>. El jugador controla un <strong>selector móvil</strong> que
+												se desplaza con las teclas de dirección.
+											</p>
+											<p>
+												Para mover una ficha, el selector debe estar sobre ella, y solo podrá <strong>moverla si está adyacente
+												al espacio vacío</strong>, simulando el deslizamiento típico de este tipo de juegos.
+											</p>
+											<ul>
+												<li>Control del selector mediante Input System (WASD o joystick).</li>
+												<li>Detección de proximidad entre la ficha seleccionada y el espacio libre.</li>
+												<li>Movimiento condicional: <strong>solo fichas vecinas al vacío pueden moverse</strong>.</li>
+												<li>Animación de movimiento fluido para la ficha desplazada.</li>
+												<li>Sistema de verificación para detectar si el puzzle está resuelto.</li>
+											</ul>
+											<p>
+												Al completar correctamente el puzzle, se reproduce una <strong>cinemática de cámara</strong> que muestra
+											    la apertura de una puerta para desbloquear nueva zona.
+											</p>
+											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleRompecabezas"
+												target="_blank"
+												class="btn btn-outline-info">Ver código en GitHub</a>
+											</div>
+
+											<!-- Columna derecha: video del puzzle -->
+											<div class="col-md-6 text-center">
+											<iframe width="100%" height="315" 
+											src="https://www.youtube.com/embed/6T8V4N-XSJU?si=_Q2lA8t3My5mxsRn" 
+											title="YouTube video player" frameborder="0" allow="accelerometer; 
+											autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+											web-share" referrerpolicy="strict-origin-when-cross-origin" 
+											allowfullscreen>
+											</iframe>
+											</div>
+
+										</div>
+									</section>
+
+
+
+
 
 
 
