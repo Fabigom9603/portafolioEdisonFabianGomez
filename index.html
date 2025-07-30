@@ -230,7 +230,7 @@
 												<li>Control del ciclo de vida del spawn en función del enemigo actual</li>
 												</ul>
 											</p>
-											<a href="https://github.com/tuusuario/sistema-spawn" 
+											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/Enemy/SpawnEnemy" 
 												target="_blank" 
 												class="btn btn-outline-info">Ver código en GitHub</a>
 											</div>
@@ -238,16 +238,109 @@
 											<!-- Columna derecha: video o gif -->
 											<div class="col-md-6 text-center">
 											<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-												<iframe src="https://www.youtube.com/embed/TU_VIDEO_ID"
-														style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-														frameborder="0" 
-														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-														allowfullscreen>
+												<iframe width="100%" height="315" 
+												src="https://www.youtube.com/embed/2j1z9krF6h0?si=EGIT36ncGMnmHBB2" 
+												title="YouTube video player" frameborder="0" 
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+												gyroscope; picture-in-picture; web-share" 
+												referrerpolicy="strict-origin-when-cross-origin" 
+												allowfullscreen>
 												</iframe>
 											</div>
 											</div>
 										</div>
 									</section>
+
+									<!--Mecanica de movimientos de enemigo-->
+
+									<section class="container my-5">
+										<div class="row align-items-center">
+											
+											<!-- Columna izquierda: descripción -->
+											<div class="col-md-6">
+											<h5 class="text-danger">🧠 IA Enemiga: Movimiento, Ataque y Muerte</h5>
+											<p>
+												Implementé el comportamiento de la IA enemiga utilizando <strong>Unity NavMesh</strong> para que los enemigos
+												persigan dinámicamente al jugador dentro del escenario. El sistema permite que el enemigo:
+											</p>
+											<ul>
+												<li>Detecte y <strong>siga al jugador</strong> cuando entra en su rango de visión.</li>
+												<li>Alcance una distancia de ataque y <strong>active una animación ofensiva</strong> cuando está lo suficientemente cerca.</li>
+												<li>Reaccione al daño recibido mostrando un <strong>efecto visual (partícula)</strong> y reduciendo su vida.</li>
+												<li>Sea <strong>destruido automáticamente</strong> al alcanzar 0 de vida, removiéndose del escenario.</li>
+											</ul>
+											<p>
+												Este sistema cubre el ciclo completo del enemigo: desde la detección del jugador hasta su eliminación, 
+												combinando animaciones, partículas, navegación con NavMesh y lógica de combate.
+											</p>
+											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/Enemy" 
+												target="_blank" 
+												class="btn btn-outline-info">Ver código en GitHub</a>
+											</div>
+
+											<!-- Columna derecha: video o gif -->
+											<div class="col-md-6 text-center">
+											<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+												<iframe width="100%" height="315" 
+												src="https://www.youtube.com/embed/Kn6Rc8JR88s?si=YVA8WFdEAetx6RJU" 
+												title="YouTube video player" frameborder="0" 
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+												gyroscope; picture-in-picture; web-share" 
+												referrerpolicy="strict-origin-when-cross-origin" 
+												allowfullscreen>
+												</iframe>
+											</div>
+											</div>
+
+										</div>
+									</section>
+
+									<!--Mecanica interaccion con objetos-->
+									<section class="container my-5">
+										<div class="row align-items-center">
+
+											<!-- Columna izquierda: descripción -->
+											<div class="col-md-6">
+											<h5 class="text-danger">🧩 Interacción con Objetos y Puzzles</h5>
+											<p>
+												Implementé un sistema de <strong>interacción contextual</strong> con objetos del entorno y elementos de puzzle.
+												Cuando el jugador entra en el área de colisión de un objeto interactuable y presiona la tecla de acción:
+											</p>
+											<ul>
+												<li>Se activa una <strong>transición de cámara</strong> utilizando <strong>Cinemachine</strong>, que enfoca el objeto desde un ángulo cinemático.</li>
+												<li>Se desencadenan <strong>eventos específicos en el entorno</strong> como animaciones, desbloqueo de puertas o activación de mecanismos.</li>
+												<li>Durante la interacción:
+												<ul>
+													<li>El <strong>movimiento del jugador se desactiva</strong> para mantener la atención en el evento.</li>
+													<li>Los <strong>enemigos detienen su IA</strong> (NavMesh y ataques) hasta que finalice la interacción.</li>
+												</ul>
+												</li>
+											</ul>
+											<p>
+												Este sistema permite ofrecer una experiencia de exploración más controlada y narrativa, integrando cámaras dirigidas, lógica de interacción y control del entorno.
+											</p>
+											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/blob/main/Assets/Scripts/PuzzleRompecabezas/PuzzleCameraTrigger.cs" 
+												target="_blank" 
+												class="btn btn-outline-info">Ver código en GitHub</a>
+											</div>
+
+											<!-- Columna derecha: video o gif -->
+											<div class="col-md-6 text-center">
+											<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+												<iframe width="100%" height="315" 
+												src="https://www.youtube.com/embed/fq2ruVMMjAs?si=KORGUFE8SRpf1wl9" 
+												title="YouTube video player" frameborder="0" allow="accelerometer; 
+												autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+												 web-share" referrerpolicy="strict-origin-when-cross-origin" 
+												 allowfullscreen>
+												</iframe>
+											</div>
+											</div>
+
+										</div>
+									</section>
+
+
 
 
 	
