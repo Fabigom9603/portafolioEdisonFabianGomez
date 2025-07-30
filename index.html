@@ -92,7 +92,7 @@
 							<!-- Columna del contenido -->
 							<div class="col-12">
 								<div class="card-body">
-									<h2 class="card-title text-primary">🏚 I Her Place</h2>
+									<h2 class="card-title text-danger">🏚 I Her Place</h2>
 									<p class="card-text">
 										<strong>Descripción:</strong><br>
 										<em>In Her Place</em> es un videojuego de género <strong>survival horror</strong> donde el jugador toma el rol de <strong>Cathy</strong>.
@@ -103,13 +103,22 @@
 										Para escapar, Cathy deberá resolver <strong>puzzles</strong> y enfrentarse a <strong>extrañas criaturas</strong> que habitan en los oscuros pasillos de la mansión. 
 										A medida que avanza, descubrirá secretos inquietantes mientras lucha por sobrevivir.
 									</p>
-									<h2 class="text-primary">🎮 Que programe ?</h2>
+
+									<a href="https://jdmango.itch.io/i-her-place"
+										target="_blank"
+										rel="noopener noreferrer"
+										class="btn btn-outline-success mt-2">
+										Jugar ahora
+									</a>
+									<div style="height: 50px;"></div>
+									<h2 class="text-danger text-center"><strong>🎮 Mi aporte </strong></h2>
+
 									<!--Mecanica Movimiento Player-->
 									<section class="container my-5">
 										<div class="row align-items-center">
 											<!-- Columna izquierda: descripción -->
 											<div class="col-md-6">
-											<h5 class="text-primary">🎮 Movimiento del Jugador</h5>
+											<h5 class="text-danger">🎮 Movimiento del Jugador</h5>
 											<p>
 												Implementé el sistema de movimiento del jugador utilizando el 
 												<strong>Input System de Unity</strong>, con una mecánica de desplazamiento 
@@ -126,10 +135,10 @@
 												target="_blank" 
 												class="btn btn-outline-info">Ver código en GitHub</a>
 											</div>
-
+											
 											<!-- Columna derecha: video -->
 											<div class="col-md-6 text-center">
-											<iframe width="560" height="315" 
+											<iframe width="100%" height="315" 
 												src="https://www.youtube.com/embed/JDrWKjONfnI?si=gU7Iva9cGLchq0U3" 
 												title="YouTube video player" 
 												frameborder="0" allow="accelerometer; autoplay; 
@@ -140,15 +149,108 @@
 										</div>
 									</section>
 
+									<!--Mecanica Combate-->
+									<section class="container my-5">
+										<div class="row align-items-center">
+											
+											<!-- Columna izquierda: descripción -->
+											<div class="col-md-6">
+											<h5 class="text-danger">⚔️ Modo Combate</h5>
+											<p>
+												Implementé un sistema de <strong>Modo Combate rítmico</strong> que se activa al presionar una tecla específica. 
+												Al entrar en este modo, se altera la lógica del juego: se muestra una <strong>UI especial</strong> y aparece un 
+												<strong>indicador de ritmo</strong> que guía al jugador con pulsos visuales sincronizados.
+											</p>
+											<p>
+												Para ejecutar un <strong>combo exitoso</strong>, el jugador debe ingresar una secuencia precisa de teclas 
+												dentro de una ventana de tiempo que coincide con el ritmo. Si la secuencia y el tiempo son correctos, se 
+												activa la <strong>animación de ataque</strong> y se aplica <strong>daño al enemigo</strong>.
+											</p>
+											<p>
+												Este sistema incluye:
+											</p>
+											<ul>
+												<li>Transición dinámica al estado de combate</li>
+												<li>Visualización de ritmo y señales de timing</li>
+												<li>Validación precisa de entradas dentro de la ventana correcta</li>
+												<li>Verificación de combinación de teclas</li>
+												<li>Activación de animaciones y gestión de daño</li>
+											</ul>
+											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/Mecanica%20Ritmo" 
+												target="_blank" 
+												class="btn btn-outline-info">Ver código en GitHub</a>
+											</div>
 
-									
+											<!-- Columna derecha: video o gameplay -->
+											<div class="col-md-6 text-center">
+											<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+												<iframe width="100%" height="315" 
+												src="https://www.youtube.com/embed/uapr2ksMBG4?si=KXQL-NBithXY3TQn" 
+												title="YouTube video player" frameborder="0" 
+												allow="accelerometer; autoplay; clipboard-write; 
+												encrypted-media; gyroscope; picture-in-picture; 
+												web-share" referrerpolicy="strict-origin-when-cross-origin" 
+												allowfullscreen>
+												</iframe>
+											</div>
+											</div>
 
-									<a href="https://jdmango.itch.io/i-her-place"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="btn btn-outline-success mt-2">
-										Jugar ahora
-									</a>
+										</div>
+									</section>	
+
+									<!--Mecanica de Spawn de enemigo-->
+
+									<section class="container my-5">
+										<div class="row align-items-center">
+											
+											<!-- Columna izquierda: descripción -->
+											<div class="col-md-6">
+											<h5 class="text-danger">👾 Sistema de Aparición Dinámica de Enemigos</h5>
+											<p>
+												Implementé un sistema de <strong>spawn dinámico</strong> que se mueve constantemente dentro de una zona 
+												delimitada del escenario, generando aleatoriedad en la aparición de enemigos.
+											</p>
+											<p>
+												Al entrar el jugador en contacto con el área del spawn:
+												<ul>
+												<li>Se genera un enemigo en tiempo real en la posición actual del spawn.</li>
+												<li>El <strong>collider del spawn se desactiva</strong> para evitar spawns múltiples.</li>
+												<li>Cuando el enemigo es derrotado, el collider del spawn se reactiva automáticamente.</li>
+												</ul>
+											</p>
+											<p>
+												Este sistema permite mantener un <strong>flujo constante de enemigos</strong> sin saturar el entorno, 
+												y añade imprevisibilidad al gameplay.
+											</p>
+											<p>
+												Incluye:
+												<ul>
+												<li>Movimiento autónomo del punto de spawn dentro de un área definida</li>
+												<li>Detección del jugador mediante colisiones</li>
+												<li>Control del ciclo de vida del spawn en función del enemigo actual</li>
+												</ul>
+											</p>
+											<a href="https://github.com/tuusuario/sistema-spawn" 
+												target="_blank" 
+												class="btn btn-outline-info">Ver código en GitHub</a>
+											</div>
+
+											<!-- Columna derecha: video o gif -->
+											<div class="col-md-6 text-center">
+											<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+												<iframe src="https://www.youtube.com/embed/TU_VIDEO_ID"
+														style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+														frameborder="0" 
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+														allowfullscreen>
+												</iframe>
+											</div>
+											</div>
+										</div>
+									</section>
+
+
+	
 								</div>
 							</div>
 						</div>
