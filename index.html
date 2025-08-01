@@ -107,7 +107,7 @@
 									<a href="https://jdmango.itch.io/i-her-place"
 										target="_blank"
 										rel="noopener noreferrer"
-										class="btn btn-outline-success mt-2">
+										class="btn btn-outline-danger mt-2">
 										Jugar ahora
 									</a>
 									<div style="height: 50px;"></div>
@@ -122,15 +122,10 @@
 											<p>
 												Implementé el sistema de movimiento del jugador utilizando el 
 												<strong>Input System de Unity</strong>, con una mecánica de desplazamiento 
-												tipo <em>tanque</em>, donde la dirección de avance depende de la orientación 
-												del personaje.
+												tipo <em>tanque</em>. Además, añadí la funcionalidad de <strong>correr</strong> al mantener 
+												presionada una tecla.
 											</p>
-											<p>
-												Además, añadí la funcionalidad de <strong>correr</strong> al mantener 
-												presionada una tecla, aumentando temporalmente la velocidad y haciendo 
-												más dinámico el gameplay. El sistema está basado en 
-												<strong>Rigidbody</strong> para colisiones realistas.
-											</p>
+								
 											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/blob/main/Assets/Scripts/Player/Movement/PlayerMovement.cs" 
 												target="_blank" 
 												class="btn btn-outline-info">Ver código en GitHub</a>
@@ -157,15 +152,8 @@
 											<div class="col-md-6">
 											<h5 class="text-danger">⚔️ Modo Combate</h5>
 											<p>
-												Implementé un sistema de <strong>Modo Combate rítmico</strong> que se activa al presionar una tecla específica. 
-												Al entrar en este modo, se altera la lógica del juego: se muestra una <strong>UI especial</strong> y aparece un 
-												<strong>indicador de ritmo</strong> que guía al jugador con pulsos visuales sincronizados.
-											</p>
-											<p>
-												Para ejecutar un <strong>combo exitoso</strong>, el jugador debe ingresar una secuencia precisa de teclas 
-												dentro de una ventana de tiempo que coincide con el ritmo. Si la secuencia y el tiempo son correctos, se 
-												activa la <strong>animación de ataque</strong> y se aplica <strong>daño al enemigo</strong>.
-											</p>
+												Implementé un sistema de <strong>Modo Combate rítmico</strong> que se activa al presionar una tecla específica. 										
+											</p>									
 											<p>
 												Este sistema incluye:
 											</p>
@@ -209,23 +197,13 @@
 												Implementé un sistema de <strong>spawn dinámico</strong> que se mueve constantemente dentro de una zona 
 												delimitada del escenario, generando aleatoriedad en la aparición de enemigos.
 											</p>
-											<p>
-												Al entrar el jugador en contacto con el área del spawn:
-												<ul>
-												<li>Se genera un enemigo en tiempo real en la posición actual del spawn.</li>
-												<li>El <strong>collider del spawn se desactiva</strong> para evitar spawns múltiples.</li>
-												<li>Cuando el enemigo es derrotado, el collider del spawn se reactiva automáticamente.</li>
-												</ul>
-											</p>
-											<p>
-												Este sistema permite mantener un <strong>flujo constante de enemigos</strong> sin saturar el entorno, 
-												y añade imprevisibilidad al gameplay.
-											</p>
+																					
 											<p>
 												Incluye:
 												<ul>
 												<li>Movimiento autónomo del punto de spawn dentro de un área definida</li>
 												<li>Detección del jugador mediante colisiones</li>
+												<li>Aparicion de enemigos en el punto del spawn</li>
 												<li>Control del ciclo de vida del spawn en función del enemigo actual</li>
 												</ul>
 											</p>
@@ -268,10 +246,7 @@
 												<li>Reaccione al daño recibido mostrando un <strong>efecto visual (partícula)</strong> y reduciendo su vida.</li>
 												<li>Sea <strong>destruido automáticamente</strong> al alcanzar 0 de vida, removiéndose del escenario.</li>
 											</ul>
-											<p>
-												Este sistema cubre el ciclo completo del enemigo: desde la detección del jugador hasta su eliminación, 
-												combinando animaciones, partículas, navegación con NavMesh y lógica de combate.
-											</p>
+											
 											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/Enemy" 
 												target="_blank" 
 												class="btn btn-outline-info">Ver código en GitHub</a>
@@ -302,8 +277,7 @@
 											<div class="col-md-6">
 											<h5 class="text-danger">🧩 Interacción con Objetos y Puzzles</h5>
 											<p>
-												Implementé un sistema de <strong>interacción contextual</strong> con objetos del entorno y elementos de puzzle.
-												Cuando el jugador entra en el área de colisión de un objeto interactuable y presiona la tecla de acción:
+												Implementé un sistema de <strong>interacción contextual</strong> con objetos del entorno y elementos de puzzle.									
 											</p>
 											<ul>
 												<li>Se activa una <strong>transición de cámara</strong> utilizando <strong>Cinemachine</strong>, que enfoca el objeto desde un ángulo cinemático.</li>
@@ -314,10 +288,7 @@
 													<li>Los <strong>enemigos detienen su IA</strong> (NavMesh y ataques) hasta que finalice la interacción.</li>
 												</ul>
 												</li>
-											</ul>
-											<p>
-												Este sistema permite ofrecer una experiencia de exploración más controlada y narrativa, integrando cámaras dirigidas, lógica de interacción y control del entorno.
-											</p>
+											</ul>										
 											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/blob/main/Assets/Scripts/PuzzleRompecabezas/PuzzleCameraTrigger.cs" 
 												target="_blank" 
 												class="btn btn-outline-info">Ver código en GitHub</a>
@@ -351,22 +322,12 @@
 												Desarrollé un puzzle interactivo donde el jugador debe <strong>manipular una serie de interruptores</strong> (switches) 
 												para lograr que una aguja indicadora se estabilice dentro de una zona marcada, simulando correctamente 
 												los niveles de <strong>voltaje y amperaje</strong> requeridos por un sistema eléctrico.
-											</p>
+											</p>										
 											<p>
-												El objetivo del puzzle es <strong>alcanzar el equilibrio exacto</strong> activando o desactivando combinaciones específicas 
-												de interruptores que afectan los parámetros eléctricos del panel.
+												Una vez el puzzle es resuelto. Se activa una transicion de camara para mostrar una animacion de apertura
+												de una puerta
 											</p>
-											<p>
-												Una vez el puzzle es resuelto:
-											</p>
-											<ul>
-												<li>Se activa una <strong>transición de cámara cinemática</strong> que enfoca una puerta cerrada.</li>
-												<li>La puerta realiza una <strong>animación de apertura</strong>.</li>
-												<li>La cámara retorna al jugador, permitiéndole continuar con la exploración.</li>
-											</ul>
-											<p>
-												Este sistema integra lógica de interacción, condiciones de resolución y feedback visual a través de cámaras y animaciones.
-											</p>
+																					
 											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleElectricidad" 
 												target="_blank" 
 												class="btn btn-outline-info">Ver código en GitHub</a>
@@ -405,19 +366,14 @@
 											<ul>
 												<li>Un <strong>display central</strong> que muestra el valor objetivo de la suma.</li>
 												<li>Un <strong>teclado numérico</strong> con los dígitos del 1 al 9.</li>
-												<li>Un <strong>contador de intentos</strong> que limita a 10 el número de selecciones posibles.</li>
+												<li>Un <strong>contador de intentos</strong> que activa un cambio de luz.</li>
 											</ul>
+										
 											<p>
-												El jugador debe planificar cuidadosamente la combinación de números 
-												para llegar exactamente al valor requerido utilizando todos los intentos.
+												Una vez el puzzle es resuelto. Se activa una transicion de camara para mostrar una animacion de apertura
+												de una puerta
 											</p>
-											<p>
-												Una vez resuelto el puzzle:
-											</p>
-											<ul>
-												<li>Se activa una <strong>transición de cámara</strong> que muestra el resultado en el entorno (por ejemplo, una puerta desbloqueándose).</li>
-												<li>Se habilitan nuevas áreas del escenario para el jugador.</li>
-											</ul>
+					
 											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleNumeros" 
 												target="_blank" 
 												class="btn btn-outline-info">Ver código en GitHub</a>
@@ -450,17 +406,10 @@
 											<p>
 												Para mover una ficha, el selector debe estar sobre ella, y solo podrá <strong>moverla si está adyacente
 												al espacio vacío</strong>, simulando el deslizamiento típico de este tipo de juegos.
-											</p>
-											<ul>
-												<li>Control del selector mediante Input System (WASD o joystick).</li>
-												<li>Detección de proximidad entre la ficha seleccionada y el espacio libre.</li>
-												<li>Movimiento condicional: <strong>solo fichas vecinas al vacío pueden moverse</strong>.</li>
-												<li>Animación de movimiento fluido para la ficha desplazada.</li>
-												<li>Sistema de verificación para detectar si el puzzle está resuelto.</li>
-											</ul>
+											</p>										
 											<p>
-												Al completar correctamente el puzzle, se reproduce una <strong>cinemática de cámara</strong> que muestra
-											    la apertura de una puerta para desbloquear nueva zona.
+												Una vez el puzzle es resuelto. Se activa una transicion de camara para mostrar una animacion de apertura
+												de una puerta
 											</p>
 											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleRompecabezas"
 												target="_blank"
@@ -477,33 +426,14 @@
 											allowfullscreen>
 											</iframe>
 											</div>
-
 										</div>
 									</section>
-
-
-
-
-
-
-
-	
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 			</div>
-
-
-
-
-
-
-
-
-
-
 
 			<!--Proyecto GameJam-->
 			<div class="carousel-item">
@@ -521,29 +451,63 @@
 							<!-- Columna del contenido -->
 							<div class="col-12">
 								<div class="card-body">
-									<h2 class="card-title text-primary">🪞 Nightmare Mirror</h2>
+									<h2 class="card-title text-success">🪞 Nightmare Mirror</h2>
 									<p class="card-text">
 										<strong>Descripción:</strong><br>
 										<em>Nightmare Mirror</em> es un juego de acción y aventura en tercera persona con tintes de terror psicológico. La historia sigue a Salem, una joven estudiante que, durante una clase de matemáticas, cae en un profundo sueño sobre su pupitre. Al despertar, descubre que está completamente sola en su salón.
 									</p>
 									<p class="card-text">
 										Al salir al pasillo, el mundo que conocía se ha transformado en una versión oscura y distorsionada de su escuela: un reflejo siniestro, una dimensión paralela donde todo parece moverse con vida propia. En esta pesadilla viviente, Salem deberá recorrer los pasillos deformes, enfrentar criaturas monstruosas y mantener la cordura mientras la línea entre el sueño y la realidad comienza a desvanecerse.
-									</p>
-									<p class="card-text">
-										El viaje culmina con un giro inesperado: todo el horror era solo un producto de su mente dormida... ¿o no?
-									</p>
-									<p class="card-text"><strong>Instrucciones:</strong></p>
-									<ul>
-										<li><strong>Moverse:</strong> W / A / S / D</li>
-										<li><strong>Atacar:</strong> Barra espaciadora</li>
-										<li><strong>Poder especial:</strong> F</li>
-									</ul>
+									</p>									
+				
 									<a href="https://jdmango.itch.io/nightmare-mirror"
 										target="_blank"
 										rel="noopener noreferrer"
 										class="btn btn-outline-success mt-2">
 										Jugar ahora
 									</a>
+
+									<div style="height: 50px;"></div>
+									<h2 class="text-danger text-center"><strong>🎮 Mi aporte </strong></h2>
+
+									<section class="container my-5">
+										<div class="row align-items-center">
+
+											<!-- Columna izquierda: descripción -->
+											<div class="col-md-6">
+											<h5 class="text-success">🌀 Teletransporte Aleatorio entre Zonas</h5>
+											<p>
+												Implementé una mecánica de <strong>teletransporte aleatorio</strong> que permite al jugador ser transportado 
+												automáticamente a uno de varios puntos de spawn disponibles al entrar en contacto con un portal.
+											</p>
+											<p>
+												El sistema funciona con una <strong>lista de ubicaciones predefinidas</strong> distribuidas en diferentes 
+												zonas del mapa. Al activar el portal:
+											</p>
+											<ul>
+												<li>Se selecciona aleatoriamente un punto de la lista.</li>
+												<li>El jugador es trasladado instantáneamente a dicha ubicación.</li>
+												<li>El sistema garantiza una distribución dinámica del gameplay y añade un componente de sorpresa.</li>
+											</ul>											
+											<a href="https://github.com/tuusuario/teletransporte-portal"
+												target="_blank"
+												class="btn btn-outline-info">Ver código en GitHub</a>
+											</div>
+
+											<!-- Columna derecha: video -->
+											<div class="col-md-6 text-center">
+											<iframe width="100%" height="315"
+													src="https://www.youtube.com/embed/TU_VIDEO_ID"
+													title="Teletransporte aleatorio"
+													frameborder="0"
+													allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+													allowfullscreen>
+											</iframe>
+											</div>
+
+										</div>
+										</section>
+
 								</div>
 							</div>
 						</div>
