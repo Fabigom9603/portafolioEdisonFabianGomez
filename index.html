@@ -13,13 +13,14 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+
 <body class="is-preload">
 
 <!-- Wrapper -->
-	<div id="wrapper">
+<div id="wrapper">
 
 	<!-- Header -->
-		<header id="header">
+	<header id="header">
 			<div class="logo text-white">
 				<span class="icon fa-gem"></span>
 			</div>
@@ -41,695 +42,647 @@
 					<li><button onclick="location.href='#contact'" type="button" class="btn btn-outline-info">CONTACTO</button></li>
 				</ul>
 			</nav>
-		</header>
+	</header>
 
-				<!-- Main -->
+	<!-- Main -->
 	<div id="main">
-
-	<!-- Intro 
-		<article id="intro">
-			<h2 class="major">Intro</h2>
-			<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-			<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-		</article>-->
-
-		<!-- PROJECTS -->
-
+		<!-- Projects -->
 		<article id="work" class="container-fluid">
 			<h1 class="card-title text-primary text-center">PROYECTOS</h1>
-			<a href="https://fabigom9603.itch.io"><div>
-			<h3 class="text-white">Perfil itch.io</h3>
-			<img class="img-fluid mx-auto d-block rounded" src="images/Banner Perfiles (1).png">			
-			</div></a>
 
-			<!-- Controles de navegación -->
-			<div class="d-flex justify-content-center mt-3 gap-3">
-				<button class="btn btn-outline-primary" type="button" data-bs-target="#miCarousel" data-bs-slide="prev">
-				Prev
-				</button>
-				<button class="btn btn-outline-primary" type="button" data-bs-target="#miCarousel" data-bs-slide="next">
-				Next
-				</button>
+			<!--Cabecera-->
+			<a href="https://fabigom9603.itch.io">
+			<div>
+				<h3 class="text-white">Perfil itch.io</h3>
+				<img class="img-fluid mx-auto d-block rounded" src="images/Banner Proyectos.png">			
 			</div>
+			</a>
 
-			<div id="miCarousel" class="carousel slide">
-			<div class="carousel-inner">
-			<!--Proyecto Final-->
+			<!--VideoJuegos-->
 
-			<div class="carousel-item active">
-				<section class="container my-5">
-					<div class="card shadow rounded bg-transparent text-white">
-						<div class="row g-0 align-items-center">
-							<!-- Columna de la imagen -->
-							<div class="col-12 text-center">
-								<img src="images/IconoInHerPlace.png"
-									alt="In Her Place"
-									class="img-fluid mx-auto d-block rounded"
-									style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px;" />
-							</div>
+			<div class="accordion accordion-flush" id="accordionFlushExample" style="background-color: transparent;">
+				<div class="accordion-item" style="background-color: transparent;">
+    			<h2 class="accordion-header">
+      				<button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        				<strong> Proyectos Videojuegos </strong>
+      				</button>
+    			</h2>
+					<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" >
+							
 
-							<!-- Columna del contenido -->
-							<div class="col-12">
-								<div class="card-body">
-									<h2 class="card-title text-danger">🏚 In Her Place</h2>
-									<p class="card-text">
-										<strong>Descripción:</strong><br>
-										<em>In Her Place</em> es un videojuego de género <strong>survival horror</strong> donde el jugador toma el rol de <strong>Cathy</strong>.
-										Tras aceptar una invitación de su compañero de carrera, Markus, para una sesión de estudio en su mansión, 
-										Cathy despierta desconcertada, sola en un lúgubre y misterioso lugar.
-									</p>
-									<p class="card-text">
-										Para escapar, Cathy deberá resolver <strong>puzzles</strong> y enfrentarse a <strong>extrañas criaturas</strong> que habitan en los oscuros pasillos de la mansión. 
-										A medida que avanza, descubrirá secretos inquietantes mientras lucha por sobrevivir.
-									</p>
+						
 
-									<a href="https://jdmango.itch.io/i-her-place"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="btn btn-outline-danger mt-2">
-										Jugar ahora
-									</a>
-									<div style="height: 50px;"></div>
-									<h2 class="text-danger text-center"><strong>🎮 Mi aporte </strong></h2>
-
-									<!--Mecanica Movimiento Player-->
-									<section class="container my-5">
-										<div class="row align-items-center">
-											<!-- Columna izquierda: descripción -->
-											<div class="col-md-6">
-											<h5 class="text-danger">🎮 Movimiento del Jugador</h5>
-											<p>
-												Implementé el sistema de movimiento del jugador utilizando el 
-												<strong>Input System de Unity</strong>, con una mecánica de desplazamiento 
-												tipo <em>tanque</em>. Además, añadí la funcionalidad de <strong>correr</strong> al mantener 
-												presionada una tecla.
-											</p>
-								
-											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/blob/main/Assets/Scripts/Player/Movement/PlayerMovement.cs" 
-												target="_blank" 
-												class="btn btn-outline-info">Ver código en GitHub</a>
-											</div>
-											
-											<!-- Columna derecha: video -->
-											<div class="col-md-6 text-center">
-											<iframe width="100%" height="315" 
-												src="https://www.youtube.com/embed/JDrWKjONfnI?si=gU7Iva9cGLchq0U3" 
-												title="YouTube video player" 
-												frameborder="0" allow="accelerometer; autoplay; 
-												clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-												web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-											</iframe>
-											</div>
-										</div>
-									</section>
-
-									<!--Mecanica Combate-->
-									<section class="container my-5">
-										<div class="row align-items-center">
-											
-											<!-- Columna izquierda: descripción -->
-											<div class="col-md-6">
-											<h5 class="text-danger">⚔️ Modo Combate</h5>
-											<p>
-												Implementé un sistema de <strong>Modo Combate rítmico</strong> que se activa al presionar una tecla específica. 										
-											</p>									
-											<p>
-												Este sistema incluye:
-											</p>
-											<ul>
-												<li>Transición dinámica al estado de combate</li>
-												<li>Visualización de ritmo y señales de timing</li>
-												<li>Validación precisa de entradas dentro de la ventana correcta</li>
-												<li>Verificación de combinación de teclas</li>
-												<li>Activación de animaciones y gestión de daño</li>
-											</ul>
-											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/Mecanica%20Ritmo" 
-												target="_blank" 
-												class="btn btn-outline-info">Ver código en GitHub</a>
-											</div>
-
-											<!-- Columna derecha: video o gameplay -->
-											<div class="col-md-6 text-center">									
-												<iframe width="100%" height="315" 
-												src="https://www.youtube.com/embed/uapr2ksMBG4?si=KXQL-NBithXY3TQn" 
-												title="YouTube video player" frameborder="0" 
-												allow="accelerometer; autoplay; clipboard-write; 
-												encrypted-media; gyroscope; picture-in-picture; 
-												web-share" referrerpolicy="strict-origin-when-cross-origin" 
-												allowfullscreen>
-												</iframe>
-											
-											</div>
-
-										</div>
-									</section>	
-
-									<!--Mecanica de Spawn de enemigo-->
-
-									<section class="container my-5">
-										<div class="row align-items-center">
-											
-											<!-- Columna izquierda: descripción -->
-											<div class="col-md-6">
-											<h5 class="text-danger">👾 Sistema de Aparición Dinámica de Enemigos</h5>
-											<p>
-												Implementé un sistema de <strong>spawn dinámico</strong> que se mueve constantemente dentro de una zona 
-												delimitada del escenario, generando aleatoriedad en la aparición de enemigos.
-											</p>
-																					
-											<p>
-												Incluye:
-												<ul>
-												<li>Movimiento autónomo del punto de spawn dentro de un área definida</li>
-												<li>Detección del jugador mediante colisiones</li>
-												<li>Aparicion de enemigos en el punto del spawn</li>
-												<li>Control del ciclo de vida del spawn en función del enemigo actual</li>
-												</ul>
-											</p>
-											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/Enemy/SpawnEnemy" 
-												target="_blank" 
-												class="btn btn-outline-info">Ver código en GitHub</a>
-											</div>
-
-											<!-- Columna derecha: video o gif -->
-											<div class="col-md-6 text-center">
-											
-												<iframe width="100%" height="315" 
-												src="https://www.youtube.com/embed/2j1z9krF6h0?si=EGIT36ncGMnmHBB2" 
-												title="YouTube video player" frameborder="0" 
-												allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-												gyroscope; picture-in-picture; web-share" 
-												referrerpolicy="strict-origin-when-cross-origin" 
-												allowfullscreen>
-												</iframe>
-											
-											</div>
-										</div>
-									</section>
-
-									<!--Mecanica de movimientos de enemigo-->
-
-									<section class="container my-5">
-										<div class="row align-items-center">
-											
-											<!-- Columna izquierda: descripción -->
-											<div class="col-md-6">
-											<h5 class="text-danger">🧠 IA Enemiga: Movimiento, Ataque y Muerte</h5>
-											<p>
-												Implementé el comportamiento de la IA enemiga utilizando <strong>Unity NavMesh</strong> para que los enemigos
-												persigan dinámicamente al jugador dentro del escenario. El sistema permite que el enemigo:
-											</p>
-											<ul>
-												<li>Detecte y <strong>siga al jugador</strong> cuando entra en su rango de visión.</li>
-												<li>Alcance una distancia de ataque y <strong>active una animación ofensiva</strong> cuando está lo suficientemente cerca.</li>
-												<li>Reaccione al daño recibido mostrando un <strong>efecto visual (partícula)</strong> y reduciendo su vida.</li>
-												<li>Sea <strong>destruido automáticamente</strong> al alcanzar 0 de vida, removiéndose del escenario.</li>
-											</ul>
-											
-											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/Enemy" 
-												target="_blank" 
-												class="btn btn-outline-info">Ver código en GitHub</a>
-											</div>
-
-											<!-- Columna derecha: video o gif -->
-											<div class="col-md-6 text-center">
-											
-												<iframe width="100%" height="315" 
-												src="https://www.youtube.com/embed/Kn6Rc8JR88s?si=YVA8WFdEAetx6RJU" 
-												title="YouTube video player" frameborder="0" 
-												allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-												gyroscope; picture-in-picture; web-share" 
-												referrerpolicy="strict-origin-when-cross-origin" 
-												allowfullscreen>
-												</iframe>
-											
-											</div>
-
-										</div>
-									</section>
-
-									<!--Mecanica interaccion con objetos-->
-									<section class="container my-5">
-										<div class="row align-items-center">
-
-											<!-- Columna izquierda: descripción -->
-											<div class="col-md-6">
-											<h5 class="text-danger">🧩 Interacción con Objetos y Puzzles</h5>
-											<p>
-												Implementé un sistema de <strong>interacción contextual</strong> con objetos del entorno y elementos de puzzle.									
-											</p>
-											<ul>
-												<li>Se activa una <strong>transición de cámara</strong> utilizando <strong>Cinemachine</strong>, que enfoca el objeto desde un ángulo cinemático.</li>
-												<li>Se desencadenan <strong>eventos específicos en el entorno</strong> como animaciones, desbloqueo de puertas o activación de mecanismos.</li>
-												<li>Durante la interacción:
-												<ul>
-													<li>El <strong>movimiento del jugador se desactiva</strong> para mantener la atención en el evento.</li>
-													<li>Los <strong>enemigos detienen su IA</strong> (NavMesh y ataques) hasta que finalice la interacción.</li>
-												</ul>
-												</li>
-											</ul>										
-											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/blob/main/Assets/Scripts/PuzzleRompecabezas/PuzzleCameraTrigger.cs" 
-												target="_blank" 
-												class="btn btn-outline-info">Ver código en GitHub</a>
-											</div>
-
-											<!-- Columna derecha: video o gif -->
-											<div class="col-md-6 text-center">
-											
-												<iframe width="100%" height="315" 
-												src="https://www.youtube.com/embed/fq2ruVMMjAs?si=KORGUFE8SRpf1wl9" 
-												title="YouTube video player" frameborder="0" allow="accelerometer; 
-												autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-												 web-share" referrerpolicy="strict-origin-when-cross-origin" 
-												 allowfullscreen>
-												</iframe>
-											
-											</div>
-
-										</div>
-									</section>
-
-									<!--Puzzle: Regulación de Voltaje y Amperaje-->
-
-									<section class="container my-5">
-										<div class="row align-items-center">
-
-											<!-- Columna izquierda: descripción -->
-											<div class="col-md-6">
-											<h5 class="text-danger">🔌 Puzzle de Voltaje y Amperaje</h5>
-											<p>
-												Desarrollé un puzzle interactivo donde el jugador debe <strong>manipular una serie de interruptores</strong> (switches) 
-												para lograr que una aguja indicadora se estabilice dentro de una zona marcada, simulando correctamente 
-												los niveles de <strong>voltaje y amperaje</strong> requeridos por un sistema eléctrico.
-											</p>										
-											<p>
-												Una vez el puzzle es resuelto. Se activa una transicion de camara para mostrar una animacion de apertura
-												de una puerta
-											</p>
-																					
-											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleElectricidad" 
-												target="_blank" 
-												class="btn btn-outline-info">Ver código en GitHub</a>
-											</div>
-
-											<!-- Columna derecha: video o gif -->
-											<div class="col-md-6 text-center">
-											<iframe width="100%" height="315" 
-											src="https://www.youtube.com/embed/KTRciKPKEgE?si=6tz43hF6kt6VyMMj" 
-											title="YouTube video player" frameborder="0" allow="accelerometer; 
-											autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-											web-share" referrerpolicy="strict-origin-when-cross-origin" 
-											allowfullscreen>
-											</iframe>
-											</div>
-
-										</div>
-									</section>
-
-									<!--Puzzle Teclado numerico-->
-									<section class="container my-5">
-										<div class="row align-items-center">
-
-											<!-- Columna izquierda: descripción -->
-											<div class="col-md-6">
-											<h5 class="text-danger">🔢 Puzzle Numérico de Suma</h5>
-											<p>
-												Implementé un puzzle de lógica en el que el jugador debe 
-												<strong>seleccionar números</strong> en un panel numérico y 
-												<strong>sumar correctamente</strong> para alcanzar el valor objetivo 
-												mostrado en pantalla.
-											</p>
-											<p>
-												El panel incluye:
-											</p>
-											<ul>
-												<li>Un <strong>display central</strong> que muestra el valor objetivo de la suma.</li>
-												<li>Un <strong>teclado numérico</strong> con los dígitos del 1 al 9.</li>
-												<li>Un <strong>contador de intentos</strong> que activa un cambio de luz.</li>
-											</ul>
-										
-											<p>
-												Una vez el puzzle es resuelto. Se activa una transicion de camara para mostrar una animacion de apertura
-												de una puerta
-											</p>
-					
-											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleNumeros" 
-												target="_blank" 
-												class="btn btn-outline-info">Ver código en GitHub</a>
-											</div>
-
-											<!-- Columna derecha: video o imagen -->
-											<div class="col-md-6 text-center">
-											<iframe width="100%" height="315" 
-											src="https://www.youtube.com/embed/2ni7A9pLS8s?si=9SRsiTddlSXs_yaM" 
-											title="YouTube video player" frameborder="0" allow="accelerometer; 
-											autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-											web-share" referrerpolicy="strict-origin-when-cross-origin" 
-											allowfullscreen>
-											</iframe>
-											</div>
-
-										</div>
-									</section>
-									<!--Puzzle Rompecabezas-->
-									<section class="container my-5">
-										<div class="row align-items-center">
-
-											<!-- Columna izquierda: descripción -->
-											<div class="col-md-6">
-											<h5 class="text-danger">🧩 Puzzle de Reorganización tipo 15</h5>
-											<p>
-												Implementé un rompecabezas inspirado en el clásico <strong>“15 Puzzle”</strong>. El jugador controla un <strong>selector móvil</strong> que
-												se desplaza con las teclas de dirección.
-											</p>
-											<p>
-												Para mover una ficha, el selector debe estar sobre ella, y solo podrá <strong>moverla si está adyacente
-												al espacio vacío</strong>, simulando el deslizamiento típico de este tipo de juegos.
-											</p>										
-											<p>
-												Una vez el puzzle es resuelto. Se activa una transicion de camara para mostrar una animacion de apertura
-												de una puerta
-											</p>
-											<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleRompecabezas"
-												target="_blank"
-												class="btn btn-outline-info">Ver código en GitHub</a>
-											</div>
-
-											<!-- Columna derecha: video del puzzle -->
-											<div class="col-md-6 text-center">
-											<iframe width="100%" height="315" 
-											src="https://www.youtube.com/embed/6T8V4N-XSJU?si=_Q2lA8t3My5mxsRn" 
-											title="YouTube video player" frameborder="0" allow="accelerometer; 
-											autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-											web-share" referrerpolicy="strict-origin-when-cross-origin" 
-											allowfullscreen>
-											</iframe>
-											</div>
-										</div>
-									</section>
+							<div id="miCarousel" class="carousel slide">
+								<!-- Controles de navegación -->
+								<div class="d-flex justify-content-center mt-3 gap-3">
+									<button class="btn btn-outline-primary" type="button" data-bs-target="#miCarousel" data-bs-slide="prev">
+										Anterior
+									</button>
+									<button class="btn btn-outline-primary" type="button" data-bs-target="#miCarousel" data-bs-slide="next">
+										Siguiente
+									</button>
 								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
 
-			<!--Proyecto GameJam-->
-			<div class="carousel-item">
-				<section class="container my-5">
-					<div class="card shadow rounded bg-transparent text-white">
-						<div class="row g-0 align-items-center">
-							<!-- Columna de la imagen -->
-							<div class="col-12 text-center">
-								<img src="images/Nightmare Mirror.png"
-									alt="Nightmare Mirror"
-									class="img-fluid mx-auto d-block rounded"
-									style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px;" />
-							</div>
+								<div class="carousel-inner">
+									
+									<!--Proyecto In Her Place-->
+									<div class="carousel-item active">
+										<section class="container my-5">
+											<div class="card shadow rounded bg-transparent text-white">
+												<div class="row g-0 align-items-center">
+													<!-- Columna de la imagen -->
+													<div class="col-12 text-center">
+														<img src="images/IconoInHerPlace.png"
+															alt="In Her Place"
+															class="img-fluid mx-auto d-block rounded"
+															style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px;" />
+													</div>
 
-							<!-- Columna del contenido -->
-							<div class="col-12">
-								<div class="card-body">
-									<h2 class="card-title text-success">🪞 Nightmare Mirror</h2>
-									<p class="card-text">
-										<strong>Descripción:</strong><br>
-										<em>Nightmare Mirror</em> es un juego de acción y aventura en tercera persona con tintes de terror psicológico. La historia sigue a Salem, una joven estudiante que, durante una clase de matemáticas, cae en un profundo sueño sobre su pupitre. Al despertar, descubre que está completamente sola en su salón.
-									</p>
-									<p class="card-text">
-										Al salir al pasillo, el mundo que conocía se ha transformado en una versión oscura y distorsionada de su escuela: un reflejo siniestro, una dimensión paralela donde todo parece moverse con vida propia. En esta pesadilla viviente, Salem deberá recorrer los pasillos deformes, enfrentar criaturas monstruosas y mantener la cordura mientras la línea entre el sueño y la realidad comienza a desvanecerse.
-									</p>									
-				
-									<a href="https://jdmango.itch.io/nightmare-mirror"
-										target="_blank"
-										rel="noopener noreferrer"
-										class="btn btn-outline-success mt-2">
-										Jugar ahora
-									</a>
+													<!-- Columna del contenido -->
+													<div class="col-12">
+														<div class="card-body">
+															<h2 class="card-title text-danger">🏚 In Her Place</h2>
+															<p class="card-text">
+																<strong>Descripción:</strong><br>
+																<em>In Her Place</em> es un videojuego de género <strong>survival horror</strong> donde el jugador toma el rol de <strong>Cathy</strong>.
+																Tras aceptar una invitación de su compañero de carrera, Markus, para una sesión de estudio en su mansión, 
+																Cathy despierta desconcertada, sola en un lúgubre y misterioso lugar.
+															</p>
+															<p class="card-text">
+																Para escapar, Cathy deberá resolver <strong>puzzles</strong> y enfrentarse a <strong>extrañas criaturas</strong> que habitan en los oscuros pasillos de la mansión. 
+																A medida que avanza, descubrirá secretos inquietantes mientras lucha por sobrevivir.
+															</p>
 
-									<div style="height: 50px;"></div>
-									<h2 class="text-danger text-center"><strong>🎮 Mi aporte </strong></h2>
+															<a href="https://jdmango.itch.io/i-her-place"
+																target="_blank"
+																rel="noopener noreferrer"
+																class="btn btn-outline-danger mt-2">
+																Jugar ahora
+															</a>
 
-									<!--Mecanica teletransporte aleatorio-->
+															<div style="height: 50px;"></div>
 
-									<section class="container my-5">
-										<div class="row align-items-center">
+															<h2 class="text-danger text-center">
+																<strong>🎮 Mi aporte </strong>
+															</h2>
 
-											<!-- Columna izquierda: descripción -->
-											<div class="col-md-6">
-											<h5 class="text-success">🌀 Teletransporte Aleatorio entre Zonas</h5>
-											<p>
-												Implementé una mecánica de <strong>teletransporte aleatorio</strong> que permite al jugador ser transportado 
-												automáticamente a uno de varios puntos de spawn disponibles al entrar en contacto con un portal.
-											</p>
-											<p>
-												El sistema funciona con una <strong>lista de ubicaciones predefinidas</strong> distribuidas en diferentes 
-												zonas del mapa. Al activar el portal:
-											</p>
-											<ul>
-												<li>Se selecciona aleatoriamente un punto de la lista.</li>
-												<li>El jugador es trasladado instantáneamente a dicha ubicación.</li>
-												<li>El sistema garantiza una distribución dinámica del gameplay y añade un componente de sorpresa.</li>
-											</ul>											
-											<a href="https://github.com/tuusuario/teletransporte-portal"
-												target="_blank"
-												class="btn btn-outline-info">Ver código en GitHub</a>
+															<!--Mecanica Movimiento Player-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+																	<!-- Columna izquierda: descripción -->
+																	<div class="col-md-6">
+																		<h5 class="text-danger">🎮 Movimiento del Jugador</h5>
+																		<p>
+																			Implementé el sistema de movimiento del jugador utilizando el 
+																			<strong>Input System de Unity</strong>, con una mecánica de desplazamiento 
+																			tipo <em>tanque</em>. Además, añadí la funcionalidad de <strong>correr</strong> al mantener 
+																			presionada una tecla.
+																		</p>
+															
+																		<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/blob/main/Assets/Scripts/Player/Movement/PlayerMovement.cs" 
+																			target="_blank" 
+																			class="btn btn-outline-info">Ver código en GitHub
+																		</a>
+																	</div>
+																	
+																	<!-- Columna derecha: video -->
+																	<div class="col-md-6 text-center">
+																		<iframe width="100%" height="315" 
+																			src="https://www.youtube.com/embed/JDrWKjONfnI?si=gU7Iva9cGLchq0U3" 
+																			title="YouTube video player" 
+																			frameborder="0" allow="accelerometer; autoplay; 
+																			clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+																			web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+																		</iframe>
+																	</div>
+																</div>
+															</section>
+
+															<!--Mecanica Combate-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+																	
+																	<!-- Columna izquierda: descripción -->
+																	<div class="col-md-6">
+																		<h5 class="text-danger">⚔️ Modo Combate</h5>
+																		<p>
+																			Implementé un sistema de <strong>Modo Combate rítmico</strong> que se activa al presionar una tecla específica. 										
+																		</p>									
+																		<p>
+																			Este sistema incluye:
+																		</p>
+																		<ul>
+																			<li>Transición dinámica al estado de combate</li>
+																			<li>Visualización de ritmo y señales de timing</li>
+																			<li>Validación precisa de entradas dentro de la ventana correcta</li>
+																			<li>Verificación de combinación de teclas</li>
+																			<li>Activación de animaciones y gestión de daño</li>
+																		</ul>
+																		<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/Mecanica%20Ritmo" 
+																			target="_blank" 
+																			class="btn btn-outline-info">Ver código en GitHub
+																		</a>
+																	</div>
+
+																	<!-- Columna derecha: video o gameplay -->
+																	<div class="col-md-6 text-center">									
+																		<iframe width="100%" height="315" 
+																		src="https://www.youtube.com/embed/uapr2ksMBG4?si=KXQL-NBithXY3TQn" 
+																		title="YouTube video player" frameborder="0" 
+																		allow="accelerometer; autoplay; clipboard-write; 
+																		encrypted-media; gyroscope; picture-in-picture; 
+																		web-share" referrerpolicy="strict-origin-when-cross-origin" 
+																		allowfullscreen>
+																		</iframe>
+																	
+																	</div>
+
+																</div>
+															</section>	
+
+															<!--Mecanica de Spawn de enemigo-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+																	
+																	<!-- Columna izquierda: descripción -->
+																	<div class="col-md-6">
+																		<h5 class="text-danger">👾 Sistema de Aparición Dinámica de Enemigos</h5>
+																		<p>
+																			Implementé un sistema de <strong>spawn dinámico</strong> que se mueve constantemente dentro de una zona 
+																			delimitada del escenario, generando aleatoriedad en la aparición de enemigos.
+																		</p>
+																												
+																		<p>
+																			Incluye:
+																			<ul>
+																			<li>Movimiento autónomo del punto de spawn dentro de un área definida</li>
+																			<li>Detección del jugador mediante colisiones</li>
+																			<li>Aparicion de enemigos en el punto del spawn</li>
+																			<li>Control del ciclo de vida del spawn en función del enemigo actual</li>
+																			</ul>
+																		</p>
+																		<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/Enemy/SpawnEnemy" 
+																			target="_blank" 
+																			class="btn btn-outline-info">Ver código en GitHub
+																		</a>
+																	</div>
+
+																	<!-- Columna derecha: video o gif -->
+																	<div class="col-md-6 text-center">
+																	
+																		<iframe width="100%" height="315" 
+																		src="https://www.youtube.com/embed/2j1z9krF6h0?si=EGIT36ncGMnmHBB2" 
+																		title="YouTube video player" frameborder="0" 
+																		allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+																		gyroscope; picture-in-picture; web-share" 
+																		referrerpolicy="strict-origin-when-cross-origin" 
+																		allowfullscreen>
+																		</iframe>
+																	
+																	</div>
+																</div>
+															</section>
+
+															<!--Mecanica de movimientos de enemigo-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+																	
+																	<!-- Columna izquierda: descripción -->
+																	<div class="col-md-6">
+																		<h5 class="text-danger">🧠 IA Enemiga: Movimiento, Ataque y Muerte</h5>
+																		<p>
+																			Implementé el comportamiento de la IA enemiga utilizando <strong>Unity NavMesh</strong> para que los enemigos
+																			persigan dinámicamente al jugador dentro del escenario. El sistema permite que el enemigo:
+																		</p>
+																		<ul>
+																			<li>Detecte y <strong>siga al jugador</strong> cuando entra en su rango de visión.</li>
+																			<li>Alcance una distancia de ataque y <strong>active una animación ofensiva</strong> cuando está lo suficientemente cerca.</li>
+																			<li>Reaccione al daño recibido mostrando un <strong>efecto visual (partícula)</strong> y reduciendo su vida.</li>
+																			<li>Sea <strong>destruido automáticamente</strong> al alcanzar 0 de vida, removiéndose del escenario.</li>
+																		</ul>
+																		
+																		<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/Enemy" 
+																			target="_blank" 
+																			class="btn btn-outline-info">Ver código en GitHub
+																		</a>
+																	</div>
+
+																	<!-- Columna derecha: video o gif -->
+																	<div class="col-md-6 text-center">
+																	
+																		<iframe width="100%" height="315" 
+																		src="https://www.youtube.com/embed/Kn6Rc8JR88s?si=YVA8WFdEAetx6RJU" 
+																		title="YouTube video player" frameborder="0" 
+																		allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+																		gyroscope; picture-in-picture; web-share" 
+																		referrerpolicy="strict-origin-when-cross-origin" 
+																		allowfullscreen>
+																		</iframe>
+																	
+																	</div>
+
+																</div>
+															</section>
+
+															<!--Mecanica interaccion con objetos-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: descripción -->
+																	<div class="col-md-6">
+																		<h5 class="text-danger">🧩 Interacción con Objetos y Puzzles</h5>
+																		<p>
+																			Implementé un sistema de <strong>interacción contextual</strong> con objetos del entorno y elementos de puzzle.									
+																		</p>
+																		<ul>
+																			<li>Se activa una <strong>transición de cámara</strong> utilizando <strong>Cinemachine</strong>, que enfoca el objeto desde un ángulo cinemático.</li>
+																			<li>Se desencadenan <strong>eventos específicos en el entorno</strong> como animaciones, desbloqueo de puertas o activación de mecanismos.</li>
+																			<li>Durante la interacción:
+																			<ul>
+																				<li>El <strong>movimiento del jugador se desactiva</strong> para mantener la atención en el evento.</li>
+																				<li>Los <strong>enemigos detienen su IA</strong> (NavMesh y ataques) hasta que finalice la interacción.</li>
+																			</ul>
+																			</li>
+																		</ul>										
+																		<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/blob/main/Assets/Scripts/PuzzleRompecabezas/PuzzleCameraTrigger.cs" 
+																			target="_blank" 
+																			class="btn btn-outline-info">Ver código en GitHub
+																		</a>
+																	</div>
+
+																	<!-- Columna derecha: video o gif -->
+																	<div class="col-md-6 text-center">
+																	
+																		<iframe width="100%" height="315" 
+																		src="https://www.youtube.com/embed/fq2ruVMMjAs?si=KORGUFE8SRpf1wl9" 
+																		title="YouTube video player" frameborder="0" allow="accelerometer; 
+																		autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+																		web-share" referrerpolicy="strict-origin-when-cross-origin" 
+																		allowfullscreen>
+																		</iframe>
+																	
+																	</div>
+
+																</div>
+															</section>
+
+															<!--Puzzle: Regulación de Voltaje y Amperaje-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: descripción -->
+																	<div class="col-md-6">
+																		<h5 class="text-danger">🔌 Puzzle de Voltaje y Amperaje</h5>
+																		<p>
+																			Desarrollé un puzzle interactivo donde el jugador debe <strong>manipular una serie de interruptores</strong> (switches) 
+																			para lograr que una aguja indicadora se estabilice dentro de una zona marcada, simulando correctamente 
+																			los niveles de <strong>voltaje y amperaje</strong> requeridos por un sistema eléctrico.
+																		</p>										
+																		<p>
+																			Una vez el puzzle es resuelto. Se activa una transicion de camara para mostrar una animacion de apertura
+																			de una puerta
+																		</p>
+																												
+																		<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleElectricidad" 
+																			target="_blank" 
+																			class="btn btn-outline-info">Ver código en GitHub
+																		</a>
+																	</div>
+
+																	<!-- Columna derecha: video o gif -->
+																	<div class="col-md-6 text-center">
+																		<iframe width="100%" height="315" 
+																		src="https://www.youtube.com/embed/KTRciKPKEgE?si=6tz43hF6kt6VyMMj" 
+																		title="YouTube video player" frameborder="0" allow="accelerometer; 
+																		autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+																		web-share" referrerpolicy="strict-origin-when-cross-origin" 
+																		allowfullscreen>
+																		</iframe>
+																	</div>
+
+																</div>
+															</section>
+
+															<!--Puzzle Teclado numerico-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: descripción -->
+																	<div class="col-md-6">
+																		<h5 class="text-danger">🔢 Puzzle Numérico de Suma</h5>
+																		<p>
+																			Implementé un puzzle de lógica en el que el jugador debe 
+																			<strong>seleccionar números</strong> en un panel numérico y 
+																			<strong>sumar correctamente</strong> para alcanzar el valor objetivo 
+																			mostrado en pantalla.
+																		</p>
+																		<p>
+																			El panel incluye:
+																		</p>
+																		<ul>
+																			<li>Un <strong>display central</strong> que muestra el valor objetivo de la suma.</li>
+																			<li>Un <strong>teclado numérico</strong> con los dígitos del 1 al 9.</li>
+																			<li>Un <strong>contador de intentos</strong> que activa un cambio de luz.</li>
+																		</ul>
+																	
+																		<p>
+																			Una vez el puzzle es resuelto. Se activa una transicion de camara para mostrar una animacion de apertura
+																			de una puerta
+																		</p>
+												
+																		<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleNumeros" 
+																			target="_blank" 
+																			class="btn btn-outline-info">Ver código en GitHub
+																		</a>
+																	</div>
+
+																	<!-- Columna derecha: video o imagen -->
+																	<div class="col-md-6 text-center">
+																		<iframe width="100%" height="315" 
+																		src="https://www.youtube.com/embed/2ni7A9pLS8s?si=9SRsiTddlSXs_yaM" 
+																		title="YouTube video player" frameborder="0" allow="accelerometer; 
+																		autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+																		web-share" referrerpolicy="strict-origin-when-cross-origin" 
+																		allowfullscreen>
+																		</iframe>
+																	</div>
+																</div>
+															</section>
+
+															<!--Puzzle Rompecabezas-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: descripción -->
+																	<div class="col-md-6">
+																		<h5 class="text-danger">🧩 Puzzle de Reorganización tipo 15</h5>
+																		<p>
+																			Implementé un rompecabezas inspirado en el clásico <strong>“15 Puzzle”</strong>. El jugador controla un <strong>selector móvil</strong> que
+																			se desplaza con las teclas de dirección.
+																		</p>
+																		<p>
+																			Para mover una ficha, el selector debe estar sobre ella, y solo podrá <strong>moverla si está adyacente
+																			al espacio vacío</strong>, simulando el deslizamiento típico de este tipo de juegos.
+																		</p>										
+																		<p>
+																			Una vez el puzzle es resuelto. Se activa una transicion de camara para mostrar una animacion de apertura
+																			de una puerta
+																		</p>
+																		<a href="https://github.com/Fabigom9603/Proyecto_Final_Unity/tree/main/Assets/Scripts/PuzzleRompecabezas"
+																			target="_blank"
+																			class="btn btn-outline-info">Ver código en GitHub</a>
+																	</div>
+
+																	<!-- Columna derecha: video del puzzle -->
+																	<div class="col-md-6 text-center">
+																		<iframe width="100%" height="315" 
+																		src="https://www.youtube.com/embed/6T8V4N-XSJU?si=_Q2lA8t3My5mxsRn" 
+																		title="YouTube video player" frameborder="0" allow="accelerometer; 
+																		autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+																		web-share" referrerpolicy="strict-origin-when-cross-origin" 
+																		allowfullscreen>
+																		</iframe>
+																	</div>
+																</div>
+															</section>
+
+														</div>
+													</div>
+												</div>
 											</div>
-
-											<!-- Columna derecha: video -->
-											<div class="col-md-6 text-center">
-											<iframe width="100%" height="315"
-													src="https://www.youtube.com/embed/TU_VIDEO_ID"
-													title="Teletransporte aleatorio"
-													frameborder="0"
-													allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-													allowfullscreen>
-											</iframe>
-											</div>
-
-										</div>
-									</section>
-
-									<section class="container my-5">
-										<div class="row align-items-center">
-
-											<!-- Columna izquierda: descripción -->
-											<div class="col-md-6">
-											<h5 class="text-success">🗺️ Organización de Escenarios y Ambientación</h5>
-											<p>
-												Me encargué de la <strong>organización, ambientación y disposición de elementos</strong> en los cinco escenarios principales del juego. 
-												Aunque los modelos 3D fueron creados previamente, diseñé la distribución dentro del motor para mejorar la narrativa visual.
-											</p>
-											<ul>
-												<li>Ubicación estratégica de objetos y props.</li>
-												<li>Asignación de <strong>música ambiental específica</strong> por nivel.</li>
-												<li>Configuración de <strong>iluminación</strong> para reforzar atmósferas (oscuridad, misterio, calma, etc.).</li>
-												<li>Ajustes de <strong>tonalidades y efectos visuales</strong> usando herramientas de iluminación en Unity.</li>
-											</ul>
-											<p>
-												El resultado fue una ambientación coherente y emocionalmente impactante para el jugador.
-											</p>
-											</div>
-
-											<!-- Columna derecha: Carrusel Bootstrap -->
-											<div class="col-md-6">
-											<div id="escenariosCarousel" class="carousel slide" data-bs-ride="carousel">
-												<div class="carousel-inner rounded shadow">
-
-												<!-- Imagen 1 -->
-												<div class="carousel-item active">
-													<img src="images/Proyecto Nightmare Mirror/SalonClases.png" class="d-block w-100" alt="Escenario 1">
-												</div>
-
-												<!-- Imagen 2 -->
-												<div class="carousel-item">
-													<img src="images/Proyecto Nightmare Mirror/Pasillo.png" class="d-block w-100" alt="Escenario 2">
-												</div>
-
-												<!-- Imagen 3 -->
-												<div class="carousel-item">
-													<img src="images/Proyecto Nightmare Mirror/SalaMaestros.png" class="d-block w-100" alt="Escenario 3">
-												</div>
-
-												<!-- Imagen 4 -->
-												<div class="carousel-item">
-													<img src="images/Proyecto Nightmare Mirror/Gimnasio.png" class="d-block w-100" alt="Escenario 3">
-												</div>
-
-												<!-- Imagen 5 -->
-												<div class="carousel-item">
-													<img src="images/Proyecto Nightmare Mirror/Biblioteca.png" class="d-block w-100" alt="Escenario 3">
-												</div>
-
-												<!-- Puedes agregar más imágenes aquí -->
-												</div>
-
-												<!-- Controles -->
-												<button class="carousel-control-prev btn-outline-success" type="button" data-bs-target="#escenariosCarousel" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Anterior</span>
-												</button>
-												<button class="carousel-control-next btn-outline-success" type="button" data-bs-target="#escenariosCarousel" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Siguiente</span>
-												</button>
-											</div>
-											</div>
-
-										</div>
 										</section>
+									</div>
 
+									<!--Proyecto Nightmare Mirror-->
+									<div class="carousel-item">
+										<section class="container my-5">
+											<div class="card shadow rounded bg-transparent text-white">
+												<div class="row g-0 align-items-center">
+													<!-- Columna de la imagen -->
+													<div class="col-12 text-center">
+														<img src="images/Nightmare Mirror.png"
+															alt="Nightmare Mirror"
+															class="img-fluid mx-auto d-block rounded"
+															style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px;" />
+													</div>
 
+													<!-- Columna del contenido -->
+													<div class="col-12">
+														<div class="card-body">
+															<h2 class="card-title text-success">🪞 Nightmare Mirror</h2>
+															<p class="card-text">
+																<strong>Descripción:</strong><br>
+																<em>Nightmare Mirror</em> es un juego de acción y aventura en tercera persona con tintes de terror psicológico. La historia sigue a Salem, una joven estudiante que, durante una clase de matemáticas, cae en un profundo sueño sobre su pupitre. Al despertar, descubre que está completamente sola en su salón.
+															</p>
+															<p class="card-text">
+																Al salir al pasillo, el mundo que conocía se ha transformado en una versión oscura y distorsionada de su escuela: un reflejo siniestro, una dimensión paralela donde todo parece moverse con vida propia. En esta pesadilla viviente, Salem deberá recorrer los pasillos deformes, enfrentar criaturas monstruosas y mantener la cordura mientras la línea entre el sueño y la realidad comienza a desvanecerse.
+															</p>									
+										
+															<a href="https://jdmango.itch.io/nightmare-mirror"
+																target="_blank"
+																rel="noopener noreferrer"
+																class="btn btn-outline-success mt-2">
+																Jugar ahora
+															</a>
+
+															<div style="height: 50px;"></div>
+															<h2 class="text-danger text-center"><strong>🎮 Mi aporte </strong></h2>
+
+															<!--Mecanica teletransporte aleatorio-->
+
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: descripción -->
+																	<div class="col-md-6">
+																		<h5 class="text-success">🌀 Teletransporte Aleatorio entre Zonas</h5>
+																		<p>
+																			Implementé una mecánica de <strong>teletransporte aleatorio</strong> que permite al jugador ser transportado 
+																			automáticamente a uno de varios puntos de spawn disponibles al entrar en contacto con un portal.
+																		</p>
+																		<p>
+																			El sistema funciona con una <strong>lista de ubicaciones predefinidas</strong> distribuidas en diferentes 
+																			zonas del mapa. Al activar el portal:
+																		</p>
+																		<ul>
+																			<li>Se selecciona aleatoriamente un punto de la lista.</li>
+																			<li>El jugador es trasladado instantáneamente a dicha ubicación.</li>
+																			<li>El sistema garantiza una distribución dinámica del gameplay y añade un componente de sorpresa.</li>
+																		</ul>											
+																		<a href="https://github.com/tuusuario/teletransporte-portal"
+																			target="_blank"
+																			class="btn btn-outline-info">Ver código en GitHub
+																		</a>
+																	</div>
+
+																	<!-- Columna derecha: video -->
+																	<div class="col-md-6 text-center">
+																		<iframe width="100%" height="315"
+																				src="https://www.youtube.com/embed/TU_VIDEO_ID"
+																				title="Teletransporte aleatorio"
+																				frameborder="0"
+																				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+																				allowfullscreen>
+																		</iframe>
+																	</div>
+
+																</div>
+															</section>
+															<!--Organizacion de Escenario-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: descripción -->
+																	<div class="col-md-6">
+																		<h5 class="text-success">🗺️ Organización de Escenarios y Ambientación</h5>
+																		<p>
+																			Me encargué de la <strong>organización, ambientación y disposición de elementos</strong> en los cinco escenarios principales del juego. 
+																			Aunque los modelos 3D fueron creados previamente, diseñé la distribución dentro del motor para mejorar la narrativa visual.
+																		</p>
+																		<ul>
+																			<li>Ubicación estratégica de objetos y props.</li>
+																			<li>Asignación de <strong>música ambiental específica</strong> por nivel.</li>
+																			<li>Configuración de <strong>iluminación</strong> para reforzar atmósferas (oscuridad, misterio, calma, etc.).</li>
+																			<li>Ajustes de <strong>tonalidades y efectos visuales</strong> usando herramientas de iluminación en Unity.</li>
+																		</ul>
+																		<p>
+																			El resultado fue una ambientación coherente y emocionalmente impactante para el jugador.
+																		</p>
+																	</div>
+																	
+																	<!-- Columna derecha: Carrusel Bootstrap -->
+																	 
+																	<div class="col-md-6">
+																		<div class="d-flex flex-wrap gap-2">
+																			<a href="images/Proyecto Nightmare Mirror/Biblioteca.png" data-lightbox="galeria-escenarios">
+																				<img src="images/Proyecto Nightmare Mirror/Biblioteca.png" class="img-fluid rounded" style="width: 150px;">
+																			</a>
+																			<a href="images/Proyecto Nightmare Mirror/Gimnasio.png" data-lightbox="galeria-escenarios">
+																				<img src="images/Proyecto Nightmare Mirror/Gimnasio.png" class="img-fluid rounded" style="width: 150px;">
+																			</a>
+																			<a href="images/Proyecto Nightmare Mirror/Pasillo.png" data-lightbox="galeria-escenarios">
+																				<img src="images/Proyecto Nightmare Mirror/Pasillo.png" class="img-fluid rounded" style="width: 150px;">
+																			</a>
+																		</div>
+																	</div>	
+
+																		<!--<div id="escenariosCarousel" class="carousel slide" data-bs-ride="carousel">
+																			<div class="carousel-inner rounded shadow">
+																			-->
+																			<!-- Imagen 1 -->
+																			<!--<div class="carousel-item active">
+																				<img src="images/Proyecto Nightmare Mirror/SalonClases.png" class="d-block w-100" alt="Escenario 1">
+																			</div>
+																		-->
+																			<!-- Imagen 2 -->
+																			<!-- <div class="carousel-item">
+																				<img src="images/Proyecto Nightmare Mirror/Pasillo.png" class="d-block w-100" alt="Escenario 2">
+																			</div>
+																		-->
+																			<!-- Imagen 3 -->
+																			<!--<div class="carousel-item">
+																				<img src="images/Proyecto Nightmare Mirror/SalaMaestros.png" class="d-block w-100" alt="Escenario 3">
+																			</div>
+																		-->
+																			<!-- Imagen 4 -->
+																			<!--<div class="carousel-item">
+																				<img src="images/Proyecto Nightmare Mirror/Gimnasio.png" class="d-block w-100" alt="Escenario 3">
+																			</div>
+																		-->
+																			<!-- Imagen 5 -->
+																			<!--<div class="carousel-item">
+																				<img src="images/Proyecto Nightmare Mirror/Biblioteca.png" class="d-block w-100" alt="Escenario 3">
+																			</div>																			
+																		-->
+																			<!-- Controles -->
+																			<!--<button class="carousel-control-prev btn-outline-success" type="button" data-bs-target="#escenariosCarousel" data-bs-slide="prev">
+																				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+																				<span class="visually-hidden">Anterior</span>
+																			</button>
+																			<button class="carousel-control-next btn-outline-success" type="button" data-bs-target="#escenariosCarousel" data-bs-slide="next">
+																				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+																				<span class="visually-hidden">Siguiente</span>
+																			</button>
+																		</div>
+																	</div>
+																	-->
+
+																</div>
+															</section>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>
+
+									<!--Proyecto Machine Run -->
+									<div class="carousel-item">
+										<section class="container my-5">
+											<div class="card shadow rounded bg-transparent text-white">
+												<div class="row g-0 align-items-center">
+													<!-- Columna de la imagen -->
+													<div class="col-12 text-center">
+														<img src="images/MachineRun Portada.png"
+															alt="Machine Run"
+															class="img-fluid mx-auto d-block rounded"
+															style="width: 200px; height: 200px; object-fit: cover; 
+															border-radius: 8px;" />
+													</div>
+
+													<!-- Columna del contenido -->
+													<div class="col-12">
+														<div class="card-body">
+															<h2 class="card-title text-primary">🤖 Machine Run</h2>
+															<p class="card-text">
+																<strong>Descripción:</strong><br>
+																<em>Machine Run</em> es un videojuego de tipo *endless runner* desarrollado en Unity durante la Game Jam de Generation Col-Mex. En un futuro distópico dominado por una inteligencia artificial hostil, tomas el rol del último humano libre, huyendo de una gigantesca fábrica de reciclaje humano.
+															</p>
+															<p class="card-text">
+																Corre, esquiva y sobrevive mientras las hordas de robots intentan eliminarte. Solo tus reflejos y algunos power-ups podrán mantenerte con vida en esta carrera por la humanidad.
+															</p>
+															<p class="card-text"><strong>Características:</strong></p>
+															<ul>
+																<li>Endless runner ambientado en un mundo post-apocalíptico controlado por IA.</li>
+																<li>Power-ups que te brindan ventajas estratégicas durante la carrera.</li>
+																<li>Inspiración en clásicos del género runner con una estética futurista.</li>
+																<li>Desarrollado en Unity como parte de una Game Jam colaborativa.</li>
+															</ul>
+															<a href="https://dhako197.itch.io/machine-run"
+															target="_blank"
+															rel="noopener noreferrer"
+															class="btn btn-outline-success mt-2">
+															Jugar ahora
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>			
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-			</div>
 
-			<!-- Segundo proyecto Machine Run -->
-			<div class="carousel-item">
-			<section class="container my-5">
-				<div class="card shadow rounded bg-transparent text-white">
-				<div class="row g-0 align-items-center">
-					<!-- Columna de la imagen -->
-					<div class="col-12 text-center">
-					<img src="images/MachineRun Portada.png"
-						alt="Machine Run"
-						class="img-fluid mx-auto d-block rounded"
-						style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px;" />
-					</div>
+				<!--Software-->
 
-					<!-- Columna del contenido -->
-					<div class="col-12">
-					<div class="card-body">
-						<h2 class="card-title text-primary">🤖 Machine Run</h2>
-						<p class="card-text">
-						<strong>Descripción:</strong><br>
-						<em>Machine Run</em> es un videojuego de tipo *endless runner* desarrollado en Unity durante la Game Jam de Generation Col-Mex. En un futuro distópico dominado por una inteligencia artificial hostil, tomas el rol del último humano libre, huyendo de una gigantesca fábrica de reciclaje humano.
-						</p>
-						<p class="card-text">
-						Corre, esquiva y sobrevive mientras las hordas de robots intentan eliminarte. Solo tus reflejos y algunos power-ups podrán mantenerte con vida en esta carrera por la humanidad.
-						</p>
-						<p class="card-text"><strong>Características:</strong></p>
-						<ul>
-						<li>Endless runner ambientado en un mundo post-apocalíptico controlado por IA.</li>
-						<li>Power-ups que te brindan ventajas estratégicas durante la carrera.</li>
-						<li>Inspiración en clásicos del género runner con una estética futurista.</li>
-						<li>Desarrollado en Unity como parte de una Game Jam colaborativa.</li>
-						</ul>
-						<a href="https://dhako197.itch.io/machine-run"
-						target="_blank"
-						rel="noopener noreferrer"
-						class="btn btn-outline-success mt-2">
-						Jugar ahora
-						</a>
-					</div>
-					</div>
+				<div class="accordion-item" style="background-color: transparent;">
+				<h2 class="accordion-header">
+      				<button class="accordion-button collapsed text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        				<strong > Proyectos Software </strong>
+      				</button>
+    			</h2>
+					<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+						<div class="accordion-body" >
+
+
+						</div>
+				 	</div>
 				</div>
-				</div>
-			</section>
-			</div>
-
-
-
-
-
-
-				<!-- Primer proyecto Boom & Globes -->
-				<div class="carousel-item">
-					<section class="container my-5">
-					<div class="card shadow rounded bg-transparent text-white">
-						<div class="row g-0 align-items-center">
-						<!-- Columna de la imagen -->
-						<div class="col-12  text-center">
-							<img src="images/Portada Boom and Globes.png"
-							alt="Boom and Globes"
-							class="img-fluid mx-auto d-block rounded"
-							style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px;" />
-						</div>
-
-						<!-- Columna del contenido -->
-						<div class="col-12 ">
-							<div class="card-body">
-							<h2 class="card-title text-primary">🎈 Boom and Globes</h2>
-							<p class="card-text">
-								<strong>Descripción:</strong><br>
-								<em>Boom and Globes</em> es un juego 2D estilo arcade en el que controlas a un pequeño globo que debe sobrevivir el mayor tiempo posible esquivando bombas mientras recoge monedas flotantes. A medida que avanzas, la dificultad aumenta con más obstáculos que pondrán a prueba tus reflejos y concentración.
-							</p>
-							<p class="card-text">
-								Con una estética colorida y mecánicas simples pero adictivas, este juego ofrece una experiencia rápida y desafiante ideal para sesiones cortas.
-							</p>
-							<p class="card-text"><strong>Características:</strong></p>
-							<ul>
-								<li>Juego en 2D con vista lateral.</li>
-								<li>Mecánica de esquiva y recolección.</li>
-								<li>Incremento progresivo de dificultad.</li>
-								<li>Controles intuitivos y accesibles.</li>
-							</ul>
-							<a href="https://fabigom9603.itch.io/boom-and-globes"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="btn btn-outline-success mt-2">
-								Jugar ahora
-							</a>
-							</div>
-						</div>
-						</div>
-					</div>
-					</section>
-				</div>
-
-				<!-- Segundo proyecto Tap the Box!!-->
-				<div class="carousel-item">
-					<section class="container my-5">
-					<div class="card shadow rounded bg-transparent text-white">
-						<div class="row g-0 align-items-center">
-						<!-- Columna de la imagen -->
-						<div class="col-12  text-center">
-							<img src="images/Portada Click and boom.png"
-							alt="Tap the Box!"
-							class="img-fluid mx-auto d-block rounded"
-							style="width: 200px; height: 200px; object-fit: cover; border-radius: 8px;" />
-						</div>
-
-						<!-- Columna del contenido -->
-						<div class="col-12">
-							<div class="card-body">
-								<h2 class="card-title text-primary">📦 Tap the Box</h2>
-								<p class="card-text">
-									<strong>Descripción:</strong><br>
-									<em>Tap the Box</em> es un juego arcade en 2D donde deberás poner a prueba tu rapidez visual y precisión. Desde la parte inferior de la pantalla emergen cajas de distintos colores, y tu objetivo es destruirlas haciendo clic antes de que escapen por la parte superior.
-								</p>
-								<p class="card-text">
-									¡Pero cuidado! Algunas cajas son rojas: si haces clic en una de ellas, el juego termina al instante. Además, si dejas que una caja (de cualquier tipo) llegue hasta arriba y vuelva a bajar sin ser destruida, también será **Game Over**. 
-								</p>
-								<p class="card-text"><strong>Características:</strong></p>
-								<ul>
-									<li>Estilo arcade rápido y desafiante.</li>
-									<li>Dinámica basada en reflejos y concentración.</li>
-									<li>Cajas con colores diferenciados: algunas son trampa.</li>
-									<li>Aumento progresivo de velocidad y dificultad.</li>
-									<li>Controles simples: solo necesitas hacer clic.</li>
-								</ul>
-								<a href="https://fabigom9603.itch.io/tap-the-box"
-									target="_blank"
-									rel="noopener noreferrer"
-									class="btn btn-outline-success mt-2">
-									Jugar ahora
-								</a>
-							</div>
-						</div>
-					</div>
-
-					</section>
-				</div>
-
-				
-				
-				
- 			</div>
-			
+			</div>	
 		</article>
 
 
@@ -828,8 +781,8 @@
 
 		</article>
 
-						<!-- Contact -->
-							<article id="contact">
+		<!-- Contact -->
+		<article id="contact">
 								<h2 class="major text-white	">Contacto</h2>
 								<form action="https://formsubmit.co/fabigom_96@hotmail.com" method="POST" onsubmit="showAlert(); return true;">
 									<input type="hidden" name="_redirect" value="">
@@ -859,33 +812,31 @@
 									<li><a href="https://wa.me/573014748985" class="icon brands fa-whatsapp"><span class="label">Facebook</span></a></li>					
 									<li><a href="https://github.com/Fabigom9603" class="icon brands fa-git"><span class="label">Facebook</span></a></li>					
 								</ul>
-							</article>
+		</article>
+	</div>
 
+	<!-- Footer -->
+	<footer id="footer">
+		<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+	</footer>
 
-					</div>
+</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+<!-- BG -->
+<div id="bg"></div>
 
-			</div>
+<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+		function showAlert() {
+				alert("Gracias por tu mensaje. Me pondré en contacto contigo.");
+		}
+	</script>
 
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-			<script>
-				function showAlert() {
-   					 alert("Gracias por tu mensaje. Me pondré en contacto contigo.");
-  				}
-			</script>
-
-	</body>
+</body>
 </html>
