@@ -598,30 +598,226 @@
 															<h2 class="card-title text-primary">🤖 Machine Run</h2>
 															<p class="card-text">
 																<strong>Descripción:</strong><br>
-																<em>Machine Run</em> es un videojuego de tipo *endless runner* desarrollado en Unity durante la Game Jam de Generation Col-Mex. En un futuro distópico dominado por una inteligencia artificial hostil, tomas el rol del último humano libre, huyendo de una gigantesca fábrica de reciclaje humano.
+																<em>Machine Run</em> es un videojuego de tipo <strong> Endless runner </strong> desarrollado en Unity durante 
+																la Game Jam de Generation Col-Mex. En un futuro distópico dominado por una inteligencia artificial hostil, 
+																tomas el rol del último humano libre, huyendo de una gigantesca fábrica de reciclaje humano.
 															</p>
 															<p class="card-text">
-																Corre, esquiva y sobrevive mientras las hordas de robots intentan eliminarte. Solo tus reflejos y algunos power-ups podrán mantenerte con vida en esta carrera por la humanidad.
+																Corre, esquiva y sobrevive mientras las hordas de robots intentan eliminarte. 
+																Solo tus reflejos y algunos power-ups podrán mantenerte con vida en esta carrera por la humanidad.
 															</p>
-															<p class="card-text"><strong>Características:</strong></p>
-															<ul>
-																<li>Endless runner ambientado en un mundo post-apocalíptico controlado por IA.</li>
-																<li>Power-ups que te brindan ventajas estratégicas durante la carrera.</li>
-																<li>Inspiración en clásicos del género runner con una estética futurista.</li>
-																<li>Desarrollado en Unity como parte de una Game Jam colaborativa.</li>
-															</ul>
+															
 															<a href="https://dhako197.itch.io/machine-run"
 															target="_blank"
 															rel="noopener noreferrer"
-															class="btn btn-outline-success mt-2">
+															class="btn btn-outline-primary mt-2">
 															Jugar ahora
 															</a>
+
+															<div style="height: 50px;"></div>
+															<h2 class="text-primary text-center">
+																<strong>🎮 Mi aporte </strong>
+															</h2>
+
+															<!--Movimiento Jugador-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: aporte -->
+																	<div class="col-md-6">
+																	<h2 class="text-primary">🤖 Movimiento del Jugador</h2>
+																	<p>
+																		Me encargué de la <strong>programación completa del movimiento del jugador</strong> en este proyecto. 
+																		El personaje cuenta con una <strong>animación continua de carrera</strong> que se reproduce de forma constante, 
+																		mientras el jugador puede desplazarse entre <strong>tres carriles</strong> distintos usando las teclas <strong>A</strong> y <strong>D</strong>.
+																	</p>															
+																	<a href="https://github.com/Dhako197/GameJam2-Generation-Equipo3/blob/main/Assets/Scripts/PlayerController.cs" 
+																		target="_blank" 
+																		class="btn btn-outline-info">Ver código en GitHub</a>
+																	</div>
+
+																	<!-- Columna derecha: video -->
+																	<div class="col-md-6 text-center">
+																		<iframe width="100%" height="315" src="https://www.youtube.com/embed/B90HGD279-M?si=IE3RIM1Phf54WXjV" 
+																		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+																		clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+																		referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+																		</iframe>
+																	</div>
+
+																</div>
+															</section>
+
+															<!--Manejo Escenario-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: aporte -->
+																	<div class="col-md-6">
+																	<h2 class="text-primary">🤖 Manejo de Escenario</h2>
+																	<p>
+																		Programé el <strong>sistema de desplazamiento del escenario</strong>, el cual se mueve en dirección  a la cámara,
+																		generando la sensación de que el personaje avanza corriendo de forma continua.
+																	</p>
+																	<ul>
+																		<li>El escenario está dividido en <strong>secciones</strong> reutilizables.</li>
+																		<li>Cuando el jugador alcanza cierto punto, la sección que queda atrás se reposiciona al final, simulando un <strong>entorno infinito</strong>.</li>
+																		<li>Al alcanzar una puntuación determinada, se activa una <strong>partícula de portal</strong> que marca la transición de escenario.</li>															
+																	</ul>
+																	<a href="https://github.com/Dhako197/GameJam2-Generation-Equipo3/tree/main/Assets/Scripts/Manejo%20Escenario" 
+																		target="_blank" 
+																		class="btn btn-outline-info">Ver código en GitHub</a>
+																	</div>
+
+																	<!-- Columna derecha: video -->
+																	<div class="col-md-6 text-center">
+																		<iframe width="100%" height="315" src="https://www.youtube.com/embed/Xi-GLPfYfh8?si=u8vpUWj_HvEh13Bb" 
+																		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+																		clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+																		referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+																		</iframe>
+																	</div>
+
+																</div>
+															</section>
+															
+															<!--Movimiento Enemigo-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: aporte -->
+																	<div class="col-md-6">
+																	<h2 class="text-primary">🤖 Sistema de Enemigos</h2>
+																	<p>
+																		Implementé el <strong>sistema completo de enemigos</strong> y su comportamiento dentro del juego.
+																		Los enemigos aparecen de forma dinámica y reaccionan a la posición del jugador.
+																	</p>
+																	<ul>
+																		<li>Los enemigos <strong>spawnean en uno de los tres carriles</strong> disponibles.</li>
+																		<li>Mediante <strong>NavMesh</strong>, se desplazan hacia el jugador siguiendo su carril.</li>
+																		<li>Cada enemigo tiene su <strong>animación de caminar</strong> para una apariencia más realista.</li>
+																		<li>Dos tipos de enemigos:
+																		<ul>
+																			<li>Enemigo que solo camina hacia el jugador.</li>
+																			<li>Enemigo que dispara proyectiles.</li>
+																		</ul>
+																		</li>
+																		<li>Sistema de <strong>pool de proyectiles</strong> para optimizar el rendimiento.</li>
+																		<li>Los disparos incluyen <strong>sonido y partículas</strong> que se activan al disparar.</li>
+																		<li>Tanto el enemigo como los proyectiles cuentan con <strong>detección de colisión</strong> para dañar al jugador y activar partículas de impacto.</li>
+																	</ul>
+																	<a href="https://github.com/Dhako197/GameJam2-Generation-Equipo3/tree/main/Assets/Scripts/Enemy" 
+																		target="_blank" 
+																		class="btn btn-outline-info">Ver código en GitHub</a>
+																	</div>
+
+																	<!-- Columna derecha: video -->
+																	<div class="col-md-6 text-center">
+																		<iframe width="100%" height="315" src="https://www.youtube.com/embed/b5J5L2l_5Ks?si=svQAXz_iiwC9aN8v" 
+																		title="YouTube video player" frameborder="0" allow="accelerometer; 
+																		autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+																		 web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+																		</iframe>
+																	</div>
+
+																</div>
+															</section>
+
+															<!--Spawn Power-up-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: aporte -->
+																	<div class="col-md-6">
+																	<h2 class="text-primary">🤖 Sistema de Power-Ups</h2>
+																	<p>
+																		Implementé el <strong>sistema de aparición y funcionamiento de power-ups</strong> para potenciar la jugabilidad y ofrecer
+																		ventajas estratégicas al jugador.
+																	</p>
+																	<ul>
+																		<li>Un <strong>spawn de power-ups</strong> genera aleatoriamente uno de dos tipos posibles cada cierto tiempo.</li>
+																		<li><strong>Power-Up de vida</strong>:
+																		<ul>
+																			<li>Recupera una vida al jugador.</li>
+																			<li>Controla que el máximo de vidas no supere <strong>3 unidades</strong>.</li>
+																		</ul>
+																		</li>
+																		<li><strong>Power-Up de escudo</strong>:
+																		<ul>
+																			<li>Activa una <strong>partícula de cápsula de energía</strong> alrededor del jugador.</li>
+																			<li>Vuelve al jugador <strong>inmune</strong> al daño durante un tiempo limitado.</li>
+																			<li>Al colisionar con obstáculos o enemigos, genera un <strong>sonido especial</strong> diferente al daño normal.</li>
+																		</ul>
+																		</li>
+																	</ul>																	
+																	<a href="https://github.com/Dhako197/GameJam2-Generation-Equipo3/tree/main/Assets/Scripts/Power-Ups" 
+																		target="_blank" 
+																		class="btn btn-outline-info">Ver código en GitHub</a>
+																	</div>
+
+																	<!-- Columna derecha: video -->
+																	<div class="col-md-6 text-center">
+																		<iframe width="100%" height="315" src="https://www.youtube.com/embed/Ae_DghDT3DE?si=BhJxDQ1HDaZzZax5" 
+																		title="YouTube video player" frameborder="0" allow="accelerometer; 
+																		autoplay; clipboard-write; encrypted-media; gyroscope; 
+																		picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+																		allowfullscreen>
+																		</iframe>
+																	</div>
+
+																</div>
+															</section>
+
+															<!--Manejo Interface in-game-->
+															<section class="container my-5">
+																<div class="row align-items-center">
+
+																	<!-- Columna izquierda: aporte -->
+																	<div class="col-md-6">
+																	<h2 class="text-primary">🤖 Manejo de la Interfaz In-Game</h2>
+																	<p>
+																		Desarrollé el <strong>HUD del juego</strong> para mostrar información clave al jugador en tiempo real,
+																		con actualización automática según las acciones y eventos del gameplay.
+																	</p>
+																	<ul>
+																		<li><strong>Contador de puntaje</strong>:
+																		<ul>
+																			<li>Aumenta cuando el jugador <strong>esquiva con éxito</strong> un obstáculo o enemigo.</li>
+																			<li>El puntaje se muestra y actualiza dinámicamente en pantalla.</li>
+																		</ul>
+																		</li>
+																		<li><strong>Indicador de vidas</strong>:
+																		<ul>
+																			<li>Reduce la cantidad de vidas visibles cuando el jugador recibe un golpe.</li>
+																			<li>Aumenta la cantidad de vidas en pantalla al obtener el <strong>Power-Up de vida</strong>, respetando el límite máximo de 3 vidas.</li>
+																		</ul>
+																		</li>
+																	</ul>
+																	
+																	<a href="https://github.com/Dhako197/GameJam2-Generation-Equipo3/tree/main/Assets/Scripts/UI%20Manager" 
+																		target="_blank" 
+																		class="btn btn-outline-info">Ver código en GitHub</a>
+																	</div>
+
+																	<!-- Columna derecha: video -->
+																	<div class="col-md-6 text-center">
+																		<iframe width="100%" height="315" src="https://www.youtube.com/embed/WCuaGaqVooA?si=Jgv54qYaFzKOl4AK" 
+																		title="YouTube video player" frameborder="0" allow="accelerometer; 
+																		autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+																		web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+																		</iframe>
+																	</div>
+
+																</div>
+																</section>
+
 														</div>
 													</div>
 												</div>
 											</div>
 										</section>
-									</div>			
+									</div>
+												
 								</div>
 							</div>
 						</div>
