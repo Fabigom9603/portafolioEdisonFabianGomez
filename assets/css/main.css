@@ -1677,4 +1677,20 @@ input, select, textarea {
 		right: 1rem;
 		}
 
+		.accordion-button.accordion-proyectos {
+		background-color: #320441 !important; /* Color de fondo inicial */
+		color: white !important; /* Color del texto inicial */
+		font-weight: bold;
+		border: 2px solid #b656b1;
+		padding: 10px 20px;
+		border-radius: 8px;
+		cursor: pointer;
+		transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		.accordion-button.accordion-proyectos:hover {
+		background-color: #b656b1 !important; /* Color de fondo al pasar el cursor */
+		color: rgb(1, 22, 39) !important; /* Color del texto al pasar el cursor */
+		}
+
 	
