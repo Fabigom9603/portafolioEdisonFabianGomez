@@ -836,8 +836,162 @@
 									</button>
 								</div>
 								<div class="carousel-inner">
-									<!-- Gif-App-Angular -->
+
+									<!-- Sistema de Gestión de Usuarios -->
+
 									<div class="carousel-item active">
+										<section class="container my-5">
+											<div class="card shadow rounded bg-transparent text-white">
+												<div class="row g-0 align-items-center">
+
+													<!-- Columna de la imagen -->
+													<div class="col-12 text-center">
+														<img src="images/SistemaUsuarios/Login.png"
+															alt="Sistema de Gestión de Usuarios"
+															class="img-fluid mx-auto d-block rounded"
+															style="width: 400px; height: 200px; object-fit: cover; object-position: left top; border-radius: 8px;" />
+													</div>
+
+													<!-- Columna del contenido -->
+													<div class="col-12">
+														<div class="card-body">
+
+															<h2 class="card-title text-info">👥 Sistema de Gestión de Usuarios</h2>
+
+															<p class="card-text">
+																<strong>Descripción:</strong><br>
+																El <em>Sistema de Gestión de Usuarios</em> es una aplicación web completa
+																desarrollada bajo una arquitectura <strong>Frontend + Backend desacoplada</strong>,
+																orientada a la administración segura de usuarios mediante autenticación,
+																registro, búsqueda, actualización y eliminación.
+															</p>
+
+															<p class="card-text">
+																El sistema combina un <strong>backend REST API desarrollado en Flask (Python)</strong>,
+																un servicio de <strong>login implementado con Azure Functions</strong> para la
+																generación de tokens <strong>JWT</strong>, y un <strong>frontend modular</strong>
+																construido con <strong>HTML5, Bootstrap 5 y JavaScript Vanilla</strong>.
+																Toda la comunicación entre capas se realiza mediante <strong>fetch</strong> y
+																respuestas en formato <strong>JSON</strong>.
+															</p>
+
+															<a href="https://github.com/Fabigom9603/Sistema_Gestion_Usuarios.git"
+																target="_blank"
+																rel="noopener noreferrer"
+																class="btn btn-outline-info mt-2">
+																Ver código en GitHub
+															</a>
+
+															<div style="height: 50px;"></div>
+
+															<h4 class="text-info">⚙️ Arquitectura del sistema</h4>
+															<p>
+																La aplicación está dividida en tres capas principales, cada una con
+																responsabilidades claramente definidas.
+															</p>
+
+															<h5 class="text-info">🔹 Login – Azure Function</h5>
+															<ul>
+																<li>Implementado como <strong>HTTP Trigger</strong> en Azure Functions.</li>
+																<li>Validación de credenciales contra base de datos SQL Server.</li>
+																<li>Generación de <strong>token JWT</strong> utilizado como apiKey.</li>
+																<li>Encapsula la lógica de autenticación, hashing de contraseñas y validación.</li>
+															</ul>
+
+															<div class="col-md-6 my-5 text-center">
+																<img class="img-fluid mx-auto d-block rounded"
+																	src="images/SistemaUsuarios/LoginProceso.png"
+																	alt="Proceso Login">
+															</div>
+
+															<h5 class="text-info">🔹 Backend – API REST (Flask)</h5>
+															<ul>
+																<li>API REST desarrollada en <strong>Flask</strong> con <strong>SQLAlchemy</strong>.</li>
+																<li>CRUD completo de usuarios.</li>
+																<li>Endpoints protegidos mediante <strong>middleware JWT</strong>.</li>
+																<li>Control de errores y respuestas estructuradas en JSON.</li>
+															</ul>
+
+															<div class="col-md-6 my-5 text-center">
+																<img class="img-fluid mx-auto d-block rounded"
+																	src="images/SistemaUsuarios/UsuariosAPI.png"
+																	alt="API Usuarios">
+															</div>
+
+															<h5 class="text-info">🔹 Frontend – Bootstrap + JavaScript</h5>
+															<ul>
+																<li>Interfaz modular basada en <strong>iframes</strong>.</li>
+																<li>Dashboard principal con carga dinámica de componentes.</li>
+																<li>Comunicación entre módulos mediante <strong>postMessage</strong>.</li>
+																<li>Consumo de la API mediante <strong>fetch</strong> autenticado.</li>
+															</ul>
+
+															<div class="col-md-6 my-5 text-center">
+																<img class="img-fluid mx-auto d-block rounded"
+																	src="images/SistemaUsuarios/Dashboard.png"
+																	alt="Dashboard">
+															</div>
+
+															<div style="height: 50px;"></div>
+
+															<h4 class="text-info">📦 Módulos principales</h4>
+
+															<h5 class="text-info">🔹 Registro de Usuarios</h5>
+															<ul>
+																<li>Formulario de creación de usuarios.</li>
+																<li>Validación de contraseña y confirmación.</li>
+																<li>Petición POST autenticada al backend.</li>
+															</ul>
+
+															<h5 class="text-info">🔹 Búsqueda de Usuarios</h5>
+															<ul>
+																<li>Búsqueda por coincidencias de nombre.</li>
+																<li>Visualización en tabla responsiva.</li>
+																<li>Listado de usuarios recientes.</li>
+															</ul>
+
+															<h5 class="text-info">🔹 Actualización de Usuarios</h5>
+															<ul>
+																<li>Edición de usuario mediante <strong>modal Bootstrap</strong>.</li>
+																<li>Actualización de username y/o contraseña.</li>
+																<li>Petición PUT autenticada.</li>
+															</ul>
+
+															<h5 class="text-info">🔹 Eliminación de Usuarios</h5>
+															<ul>
+																<li>Selección de usuario desde tabla.</li>
+																<li>Eliminación mediante petición DELETE.</li>
+																<li>Validación previa del token.</li>
+															</ul>
+
+															<div style="height: 50px;"></div>
+
+															<h4 class="text-info text-center"><strong>🔐 Seguridad y buenas prácticas</strong></h4>
+															<ul>
+																<li>Autenticación basada en <strong>JSON Web Tokens (JWT)</strong>.</li>
+																<li>Tokens almacenados en <strong>localStorage</strong>.</li>
+																<li>Middleware de validación y expiración de tokens.</li>
+																<li>Hash seguro de contraseñas con SALT.</li>
+																<li>Cierre automático de sesión por <strong>inactividad</strong>.</li>
+															</ul>
+
+															<h5 class="text-info mt-4 text-center">📱 Interfaz responsiva</h5>
+															<p class="text-center">
+																La aplicación cuenta con un diseño totalmente responsive,
+																adaptándose a diferentes tamaños de pantalla gracias al uso de
+																<strong>Bootstrap 5</strong>, garantizando una experiencia fluida y consistente.
+															</p>
+
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</section>
+									</div>
+
+									<!-- Gif-App-Angular -->
+									<div class="carousel-item">
 										<section class="container my-5">
 											<div class="card shadow rounded bg-transparent text-white">
 												<div class="row g-0 align-items-center">
