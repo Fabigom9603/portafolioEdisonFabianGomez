@@ -991,6 +991,210 @@
 										</section>
 									</div>
 
+									<!-- Sistema de Gestión de Tareas (Full Stack) -->
+
+									<div class="carousel-item">
+										<section class="container my-5">
+											<div class="card shadow rounded bg-transparent text-white">
+												<div class="row g-0 align-items-center">
+
+													<!-- Columna de la imagen -->
+													<div class="col-12 text-center">
+														<img src="images/mini-saas/Principal.png"
+															alt="Sistema de Gestión de Tareas"
+															class="img-fluid mx-auto d-block rounded"
+															style="width: 400px; height: 200px; object-fit: cover; object-position: left top; border-radius: 8px;" />
+													</div>
+
+													<!-- Columna del contenido -->
+													<div class="col-12">
+														
+														<div class="card-body">
+
+															<h2 class="card-title text-info">✅ Sistema de Gestión de Tareas (Mini SaaS)</h2>
+
+															<p class="card-text">
+																<strong>Descripción:</strong><br>
+																El <em>Sistema de Gestión de Tareas</em> es una aplicación web completa tipo <strong>mini SaaS</strong>
+																desarrollada bajo una arquitectura <strong>Frontend + Backend desacoplada</strong>,
+																orientada a la organización personal de tareas mediante autenticación segura,
+																CRUD completo, filtros y búsqueda en tiempo real.
+															</p>
+
+															<p class="card-text">
+																El sistema combina un <strong>backend REST API desarrollado en Node.js + Express</strong>,
+																un servicio de <strong>autenticación con JWT</strong> y encriptación de contraseñas con <strong>bcrypt</strong>,
+																una <strong>base de datos PostgreSQL</strong> con relaciones, y un <strong>frontend moderno</strong>
+																construido con <strong>React + TypeScript + Tailwind CSS</strong>.
+																El proyecto está desplegado en producción: <strong>frontend en Vercel</strong> y <strong>backend + base de datos en Railway</strong>.
+															</p>
+
+															<a href="https://github.com/Fabigom9603/saas-tareas.git"
+																target="_blank"
+																rel="noopener noreferrer"
+																class="btn btn-outline-info mt-2">
+																📁 Ver código en GitHub
+															</a>
+
+															<a href="https://saas-tareas.vercel.app"
+																target="_blank"
+																rel="noopener noreferrer"
+																class="btn btn-outline-success mt-2 ms-2">
+																🚀 Ver demo en vivo
+															</a>
+
+															<div style="height: 50px;"></div>
+
+															<h4 class="text-info">⚙️ Arquitectura del sistema</h4>
+															<p>
+																La aplicación está dividida en tres capas principales, cada una con
+																responsabilidades claramente definidas y desplegada de forma independiente.
+															</p>
+
+															<h5 class="text-info">🔹 Frontend – React + TypeScript + Tailwind CSS</h5>
+															<ul>
+																<li>Interfaz moderna y responsiva construida con <strong>React 18</strong> y <strong>TypeScript</strong>.</li>
+																<li>Estilos con <strong>Tailwind CSS</strong> para diseño rápido y consistente.</li>
+																<li>Estado global de autenticación mediante <strong>Context API</strong>.</li>
+																<li>Comunicación con backend usando <strong>Axios</strong> e interceptores para manejo automático de tokens JWT.</li>
+																<li>Componentes reutilizables: <strong>TaskList, TaskForm, Layout, Login, Register</strong>.</li>
+																<li>Desplegado en <strong>Vercel</strong> con despliegue automático desde GitHub.</li>
+															</ul>
+
+															<div class="col-md-6 my-5 text-center">
+																<img class="img-fluid mx-auto d-block rounded"
+																	src="images/mini-saas/Estilos Tailwind.png"
+																	alt="Frontend React + Tailwind">
+															</div>
+
+															<h5 class="text-info">🔹 Backend – API REST (Node.js + Express)</h5>
+															<ul>
+																<li>API REST desarrollada en <strong>Node.js + Express</strong>.</li>
+																<li>CRUD completo de tareas con endpoints protegidos.</li>
+																<li>Autenticación <strong>JWT</strong> con middleware personalizado.</li>
+																<li>Encriptación de contraseñas con <strong>bcrypt</strong>.</li>
+																<li>Arquitectura profesional: <strong>controllers / models / routes / middleware / utils</strong>.</li>
+																<li>Variables de entorno para configuración segura.</li>
+																<li>Desplegado en <strong>Railway</strong>.</li>
+															</ul>
+
+															<div class="col-md-6 my-5 text-center">
+																<img class="img-fluid mx-auto d-block rounded"
+																	src="images/mini-saas/Backend.png"
+																	alt="API REST Node.js">
+															</div>
+
+															<h5 class="text-info">🔹 Base de Datos – PostgreSQL</h5>
+															<ul>
+																<li>Base de datos relacional <strong>PostgreSQL</strong>.</li>
+																<li>Tablas: <strong>users</strong> y <strong>tasks</strong>.</li>
+																<li>Relaciones con <strong>clave foránea</strong> (user_id en tasks).</li>
+																<li>Eliminación en cascada (<strong>ON DELETE CASCADE</strong>).</li>
+																<li>Fechas automáticas con <strong>CURRENT_TIMESTAMP</strong>.</li>
+																<li>Alojada en <strong>Railway</strong> con respaldo automático.</li>
+															</ul>
+
+															<div class="col-md-6 my-5 text-center">
+																<img class="img-fluid mx-auto d-block rounded"
+																	src="images/mini-saas/Base de Datos.png"
+																	alt="Base de datos PostgreSQL">
+															</div>
+
+															<div style="height: 50px;"></div>
+
+															<h4 class="text-info">📦 Funcionalidades implementadas</h4>
+
+															<h5 class="text-info">🔹 Autenticación de usuarios</h5>
+															<ul>
+																<li>Registro de nuevos usuarios con validaciones.</li>
+																<li>Inicio de sesión con generación de token JWT.</li>
+																<li>Almacenamiento seguro del token en localStorage.</li>
+																<li>Cierre de sesión con limpieza de datos.</li>
+																<li>Protección de rutas según autenticación.</li>
+															</ul>
+
+															<div class="col-md-6 my-5 text-center">
+																<img class="img-fluid mx-auto d-block rounded"
+																	src="images/mini-saas/Login.png"
+																	alt="Pantalla de Login">
+															</div>
+
+															<h5 class="text-info">🔹 CRUD de tareas</h5>
+															<ul>
+																<li><strong>Crear</strong> nuevas tareas con título y descripción.</li>
+																<li><strong>Leer</strong> listado completo de tareas del usuario.</li>
+																<li><strong>Actualizar</strong> título, descripción o estado (completada/pendiente).</li>
+																<li><strong>Eliminar</strong> tareas con confirmación previa.</li>
+																<li><strong>Marcar como completada</strong> con checkbox.</li>
+															</ul>
+
+															<div class="col-md-6 my-5 text-center">
+																<img class="img-fluid mx-auto d-block rounded"
+																	src="images/mini-saas/Crear-Tarea.png"
+																	alt="Lista de tareas">
+															</div>
+
+															<h5 class="text-info">🔹 Filtros y búsqueda</h5>
+															<ul>
+																<li><strong>Filtro por estado:</strong> Todas / Pendientes / Completadas.</li>
+																<li><strong>Contadores visuales</strong> para cada categoría.</li>
+																<li><strong>Búsqueda en tiempo real</strong> por título o descripción.</li>
+																<li>Combinación de filtros + búsqueda.</li>
+															</ul>
+
+															<h5 class="text-info">🔹 Diseño responsivo</h5>
+															<ul>
+																<li>Interfaz adaptada a <strong>móviles, tablets y desktop</strong>.</li>
+																<li>Header con nombre de usuario y botón de cierre de sesión.</li>
+																<li>Footer con información del proyecto.</li>
+																<li>Modal para crear/editar tareas.</li>
+																<li>Efectos hover y feedback visual en todas las acciones.</li>
+															</ul>
+
+															<div style="height: 50px;"></div>
+
+															<h4 class="text-info text-center"><strong>🔐 Seguridad y buenas prácticas</strong></h4>
+															<ul>
+																<li>Autenticación basada en <strong>JSON Web Tokens (JWT)</strong>.</li>
+																<li>Tokens almacenados en <strong>localStorage</strong> y enviados en cada petición.</li>
+																<li>Middleware de validación y expiración de tokens en backend.</li>
+																<li>Hash seguro de contraseñas con <strong>bcrypt</strong> (SALT automático).</li>
+																<li>Variables de entorno para <strong>JWT_SECRET</strong> y credenciales de BD.</li>
+																<li>Interceptor de Axios para agregar token automáticamente.</li>
+																<li>Validaciones del lado del cliente y del servidor.</li>
+																<li>Código documentado profesionalmente en español.</li>
+															</ul>
+
+															<div style="height: 50px;"></div>
+
+															<h4 class="text-info"><strong>🌐 Despliegue en producción</strong></h4>
+															<ul>
+																<li><strong>Frontend:</strong> Desplegado en <strong>Vercel</strong> con CDN global y HTTPS.</li>
+																<li><strong>Backend:</strong> Desplegado en <strong>Railway</strong> con PostgreSQL integrado.</li>
+																<li><strong>Base de datos:</strong> PostgreSQL en Railway con respaldo automático.</li>
+																<li><strong>CI/CD:</strong> Despliegue automático desde GitHub en ambas plataformas.</li>
+																<li><strong>Variables de entorno:</strong> Configuradas para desarrollo y producción.</li>
+															</ul>
+
+															<div style="height: 50px;"></div>
+
+															<h5 class="text-info text-center">🛠️ Tecnologías utilizadas</h5>
+															<p class="text-center">
+																<strong>Frontend:</strong> React 18 • TypeScript • Tailwind CSS • Context API • Axios • Vercel<br>
+																<strong>Backend:</strong> Node.js • Express • JWT • bcrypt • Railway<br>
+																<strong>Base de datos:</strong> PostgreSQL<br>
+																<strong>Control de versiones:</strong> Git • GitHub
+															</p>
+
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</section>
+									</div>
+
+
 									<!-- Gif-App-Angular -->
 									<div class="carousel-item">
 										<section class="container my-5">
