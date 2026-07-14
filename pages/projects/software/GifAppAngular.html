@@ -1,0 +1,139 @@
+<!-- Gif-App-Angular -->
+
+<section class="container my-5">
+    <div class="card shadow rounded bg-transparent text-white">
+        <div class="row g-0 align-items-center">
+            <!-- Columna de la imagen -->
+            <div class="col-12 text-center">
+                <img src="images/Gits-App/Index.png"
+                    alt="GifApp Angular"
+                    class="img-fluid mx-auto d-block rounded"
+                    style="width: 400px; height: 200px; object-fit: cover; object-position: left top; border-radius: 8px;" />
+            </div>
+
+            <!-- Columna del contenido -->
+            <div class="col-12">
+                <div class="card-body">
+                    <h2 class="card-title text-info">💻 GifApp - Angular 20</h2>
+                    <p class="card-text">
+                        <strong>Descripción:</strong><br>
+                        <em>GifApp</em> es una aplicación web desarrollada con <strong>Angular 20</strong> y 
+                        <strong>TailwindCSS</strong> que permite a los usuarios buscar y visualizar 
+                        imágenes animadas en tiempo real mediante la integración de una API externa.
+                    </p>
+                    <p class="card-text">
+                        La aplicación cuenta con un sistema de <strong>trending</strong> para mostrar 
+                        los GIFs más populares del momento, además de un <strong>historial persistente</strong> 
+                        que se guarda en <strong>Local Storage</strong> del navegador, permitiendo acceder 
+                        a búsquedas anteriores en cualquier momento y entre secciones.
+                    </p>
+
+                    <a href="https://github.com/Fabigom9603/GitApp-Angular"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline-info mt-2">
+                        Ver código en GitHub
+                    </a>
+
+                    <div style="height: 50px;"></div>
+
+                    <h4 class="text-info">⚙️ Usos y Arquitectura de la Aplicación</h4>
+                    <p>
+                        La aplicación fue diseñada siguiendo los principios de <strong>modularidad</strong> 
+                        y <strong>reutilización de componentes</strong> que ofrece Angular, lo cual hace 
+                        que el código sea más <em>óptimo, fácil de mantener y entender</em>.
+                    </p>
+                    <h5 class="text-info">🔹 Estructura de módulos y componentes</h5>
+                    <ul>
+                        <li><strong>Componente de GIF individual</strong></li>
+                        <li><strong>Componente de Grid</strong></li>
+                        <li><strong>Componente de Historial</strong></li>
+                        <li><strong>Componente de Menú lateral</strong></li>
+                    </ul>
+
+                    <h5 class="text-info">🔹 Tecnologías y buenas prácticas</h5>
+                    <ul>
+                        <li><strong>Señales de Angular 20:</strong> Manejo de estados reactivos de manera simple y eficiente.</li>
+                        <li><strong>Consumo de API con Angular HttpClient:</strong> Integración directa con el framework 
+                        y mejor control de peticiones.</li>
+                        <li><strong>Persistencia de datos con Local Storage:</strong> Permite guardar el historial de búsquedas sin backend.</li>
+                        <li><strong>Estilos con TailwindCSS:</strong> Uso de utilidades para un diseño consistente y mantenible.</li>
+                    </ul>
+
+                    <h5 class="text-info">🔹 Ventajas principales</h5>
+                    <ul>
+                        <li>Código más <strong>modular y organizado</strong>.</li>
+                        <li>Componentes fácilmente <strong>reutilizables</strong> en otros proyectos.</li>
+                        <li><strong>Menor duplicación</strong> de lógica.</li>
+                        <li>Mejor <strong>separación de responsabilidades</strong>.</li>
+                        <li>Facilidad para <strong>escalar</strong> y agregar nuevas funcionalidades.</li>
+                    </ul>
+
+
+
+                    <div style="height: 50px;"></div>
+                    <h4 class="text-info text-center"><strong>⚡ Funcionalidades destacadas</strong></h4>
+
+                    <!-- Buscador dinámico -->
+                    <section class="container my-5">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h5 class="text-info">🔍 Buscador dinámico</h5>
+                                <p>
+                                    Los usuarios pueden buscar cualquier GIF escribiendo en el buscador. 
+                                    La aplicación consume la <strong>API en tiempo real</strong> y muestra 
+                                    resultados inmediatos con paginación y scroll adaptable.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img class="img-fluid mx-auto d-block rounded" 
+                                    src="images/Gits-App/Buscador.png" 
+                                    alt="Buscador dinámico">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Historial de búsquedas -->
+                    <section class="container my-5">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h5 class="text-info">📂 Historial de búsquedas</h5>
+                                <p>
+                                    Cada búsqueda se guarda automáticamente en el <strong>Local Storage</strong>. 
+                                    Este historial se mantiene incluso al cambiar de sección o recargar la página, 
+                                    permitiendo volver a búsquedas anteriores fácilmente.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img class="img-fluid mx-auto d-block rounded" 
+                                    src="images/Gits-App/Historial.png" 
+                                    alt="Historial persistente">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Sección Trending -->
+                    <section class="container my-5">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h5 class="text-info">🔥 Sección Trending</h5>
+                                <p>
+                                    Una sección dedicada a mostrar los <strong>GIFs más populares</strong> 
+                                    del momento según la API, actualizados de forma automática. 
+                                    Esto mantiene la aplicación dinámica y atractiva para el usuario.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img class="img-fluid mx-auto d-block rounded" 
+                                    src="images/Gits-App/Trending.png" 
+                                    alt="Trending GIFs">
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+							

@@ -1,0 +1,38 @@
+<!-- Contact -->
+<article id="contact">
+    <h2 class="major text-white	">Contacto</h2>
+    <form action="https://formsubmit.co/fabigom_96@hotmail.com" method="POST" onsubmit="showAlert(); return true;">
+        <input type="hidden" name="_redirect" value="">
+        <div class="fields">
+            <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required/>
+            </div>
+            <div class="field half">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required/>
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="4" required></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+        </div>
+            
+        <ul class="actions">
+            <li><input type="submit" value="Send Message" class="primary" /></li>
+            <li><input type="reset" value="Reset" /></li>
+        </ul>
+    </form>
+    <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/edison-fabian-gomez-castillo-b3a055198/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://wa.me/573014748985" class="icon brands fa-whatsapp"><span class="label">Facebook</span></a></li>					
+        <li><a href="https://github.com/Fabigom9603" class="icon brands fa-git"><span class="label">Facebook</span></a></li>					
+    </ul>
+</article>
+
+<script>
+    function showAlert() {
+            alert("Gracias por tu mensaje. Me pondré en contacto contigo.");
+    }
+</script>

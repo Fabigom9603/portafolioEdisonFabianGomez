@@ -205,6 +205,12 @@
 					if (!$body.hasClass('is-article-visible'))
 						return;
 
+				// Ocultar botones del carrusel cada vez que se cierra
+				// cualquier artículo (click afuera, Escape, hash vacío, X).
+					document.body.classList.remove('has-carousel');
+					document.getElementById('carouselBtnLeft')?.style.setProperty('display', 'none');
+					document.getElementById('carouselBtnRight')?.style.setProperty('display', 'none');
+
 				// Add state?
 					if (typeof addState != 'undefined'
 					&&	addState === true)
@@ -295,7 +301,7 @@
 					$('<div class="close">Close</div>')
 						.appendTo($this)
 						.on('click', function() {
-							location.hash = '';
+							$main._hide(true);
 						});
 
 				// Prevent clicks from inside article from bubbling.
@@ -306,13 +312,25 @@
 			});
 
 		// Events.
-			$body.on('click', function(event) {
 
-				// Article visible? Hide.
-					if ($body.hasClass('is-article-visible'))
-						$main._hide(true);
+			// BLOQUEO EN CAPTURA: evita que clicks en los botones del
+			// carrusel (que viven fuera de #main/article) lleguen al
+			// listener de $body que cierra el artículo activo.
+			// Debe ir ANTES del $body.on('click', ...) para garantizar
+			// que corre primero (fase de captura siempre precede a burbuja).
+				document.addEventListener('click', function(event) {
+					if (event.target.closest('.carousel-side-btn')) {
+						event.stopPropagation();
+					}
+				});
 
-			});
+		$body.on('click', function(event) {
+			// Ignorar clicks en los botones fixed del carrusel
+			if (event.target.closest('.carousel-side-btn')) return;
+
+			if ($body.hasClass('is-article-visible'))
+				$main._hide(true);
+		});
 
 			$window.on('keyup', function(event) {
 
@@ -391,11 +409,62 @@
 				$main.hide();
 				$main_articles.hide();
 
+			// Botones del carrusel ocultos por defecto al cargar la página.
+				document.getElementById('carouselBtnLeft')?.style.setProperty('display', 'none');
+				document.getElementById('carouselBtnRight')?.style.setProperty('display', 'none');
+
 			// Initial article.
 				if (location.hash != ''
 				&&	location.hash != '#')
 					$window.on('load', function() {
 						$main._show(location.hash.substr(1), true);
 					});
+
+window.cargarPagina = async function(ruta, idArticulo) {
+
+			const response = await fetch(ruta);
+			const html = await response.text();
+
+			// Insertar el artículo cargado
+			$main.html(html);
+
+			// Actualizar la lista de artículos del template
+			$main_articles = $main.children('article');
+
+			// Registrar botón cerrar y evitar propagación de clicks
+			$main_articles.each(function() {
+
+				var $this = $(this);
+
+				if ($this.find('.close').length === 0) {
+					$('<div class="close">Close</div>')
+						.appendTo($this)
+						.on('click', function() {
+							$main._hide(true);
+						});
+				}
+
+				$this.on('click', function(event) {
+					event.stopPropagation();
+				});
+
+			});
+
+			// Mostrar el artículo usando las animaciones originales
+			$main._show(idArticulo);
+
+			// Si es la página de proyectos, cargar los carruseles
+			// y activar los botones fixed compartidos
+			if (ruta === "pages/projects.html") {
+				document.body.classList.add('has-carousel');
+				document.getElementById('carouselBtnLeft')?.style.setProperty('display', 'flex');
+				document.getElementById('carouselBtnRight')?.style.setProperty('display', 'flex');
+				await cargarProyectos();
+			} else {
+				document.body.classList.remove('has-carousel');
+				document.getElementById('carouselBtnLeft')?.style.setProperty('display', 'none');
+				document.getElementById('carouselBtnRight')?.style.setProperty('display', 'none');
+			}
+		};
 
 })(jQuery);

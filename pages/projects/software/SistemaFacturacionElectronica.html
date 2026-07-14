@@ -1,0 +1,155 @@
+<!-- Sistema facturacion electronica -->
+
+<section class="container my-5">
+    <div class="card shadow rounded bg-transparent text-white">
+        <div class="row g-0 align-items-center">
+            <!-- Columna de la imagen -->
+            <div class="col-12 text-center">
+                <img src="images/SIstemaFacturacion/Inicio.png"
+                    alt="Sistema de Facturación Electrónica"
+                    class="img-fluid mx-auto d-block rounded"
+                    style="width: 400px; height: 200px; object-fit: cover; object-position: left top; border-radius: 8px;" />
+            </div>
+
+            <!-- Columna del contenido -->
+            <div class="col-12">
+                <div class="card-body">
+                    <h2 class="card-title text-info">🧾 Sistema de Facturación Electrónica</h2>
+                    <p class="card-text">
+                        <strong>Descripción:</strong><br>
+                        El <em>Sistema de Facturación Electrónica</em> es una aplicación web desarrollada con 
+                        <strong>HTML, CSS, JavaScript y Bootstrap</strong> en el frontend, y un 
+                        <strong>backend en PHP</strong> basado en una <strong>API REST</strong> 
+                        para la conexión y gestión de la base de datos.
+                    </p>
+                    <p class="card-text">
+                        La aplicación integra el consumo de <strong>dos APIs</strong>: 
+                        una propia para el manejo interno de datos y otra externa 
+                        —<strong>Clarisa API</strong>— para la <strong>validación de facturas electrónicas</strong>. 
+                        Todos los datos se gestionan en formato <strong>JSON</strong>, garantizando 
+                        una comunicación clara y estructurada entre cliente y servidor.
+                    </p>
+
+                    <a href="https://github.com/Fabigom9603/Sistema_Facturacion_Electronica.git"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline-info mt-2">
+                        Ver código en GitHub
+                    </a>
+
+                    <div style="height: 50px;"></div>
+
+                    <h4 class="text-info">⚙️ Módulos principales de la aplicación</h4>
+                    <p>
+                        El sistema está compuesto por tres módulos principales, 
+                        cada uno con su propia lógica y comunicación con el backend.
+                    </p>
+
+                    <h5 class="text-info">🔹 Módulo de Login</h5>
+                    <ul>
+                        <li>Validación de credenciales contra la base de datos mediante la API REST PHP.</li>
+                        <li>Generación y almacenamiento seguro de un <strong>token de autenticación</strong> (login persistente).</li>
+                        <li>Bloqueo total del acceso a la aplicación hasta que la autenticación sea exitosa.</li>
+                        <li>Integración simultánea con la <strong>API de login de Clarisa</strong> para sincronizar el usuario.</li>
+                    </ul>
+                        <div class="col-md-6 my-5 text-center">
+                            <img class="img-fluid mx-auto d-block rounded" 
+                                src="images/SIstemaFacturacion/Login.png" 
+                                alt="Login Sistema Facturacion">
+                        </div>
+
+                    <h5 class="text-info">🔹 Módulo de Clientes</h5>
+                    <ul>
+                        <li>Implementa un <strong>CRUD completo</strong> con consumo del backend PHP.</li>
+                        <li>Permite crear, editar, listar y eliminar clientes desde una interfaz clara y responsive.</li>
+                        <li>Incluye un submódulo para la gestión del <strong>tipo de documento</strong>.</li>
+                    </ul>
+                        <div class="col-md-6 my-5 text-center">
+                            <img class="img-fluid mx-auto d-block rounded" 
+                                src="images/SIstemaFacturacion/PrincipalClientes.png" 
+                                alt="PrincipalClientes">
+                        </div>
+
+                        <div class="col-md-6 my-5 text-center">
+                            <img class="img-fluid mx-auto d-block rounded" 
+                                src="images/SIstemaFacturacion/CreacionTipoDoc.png" 
+                                alt="Creacion Tipo documento">
+                        </div>
+
+                        <div class="col-md-6 my-5 text-center">
+                            <img class="img-fluid mx-auto d-block rounded" 
+                                src="images/SIstemaFacturacion/CreacionCliente.png" 
+                                alt="Creacion cliente">
+                        </div>
+
+                    <h5 class="text-info">🔹 Módulo de Factura</h5>
+                    <ul>
+                        <li>Generación completa de facturas con selección de clientes existentes o creación rápida.</li>
+                        <li>Búsqueda y adición dinámica de productos, con <strong>cálculos automáticos</strong> de impuestos, 
+                            subtotales, descuentos y recargos.</li>
+                        <li>Selección de <strong>métodos y medios de pago</strong> personalizables.</li>
+                        <li>Envío directo de la factura para <strong>validación ante la API Clarisa</strong>.</li>
+                    </ul>
+
+                        <div class="col-md-6 my-5 text-center">
+                            <img class="img-fluid mx-auto d-block rounded" 
+                                src="images/SIstemaFacturacion/AgregarProductos.png"
+                                alt="AgregarProductos">
+                        </div>
+
+                        <div class="col-md-6 my-5 text-center">
+                            <img class="img-fluid mx-auto d-block rounded" 
+                                src="images/SIstemaFacturacion/CalculosAutomaticos.png" 
+                                alt="Calculos">
+                        </div>
+
+                        <div class="col-md-6 my-5 text-center">
+                            <img class="img-fluid mx-auto d-block rounded" 
+                                src="images/SIstemaFacturacion/Regitro cliente Factura.png" 
+                                alt="Creacion cliente">
+                        </div>
+
+                    <div style="height: 50px;"></div>
+
+                    <h4 class="text-info text-center"><strong>⚡ Características técnicas destacadas</strong></h4>
+                    <ul>
+                        <li><strong>Frontend responsivo</strong> y moderno gracias a Bootstrap 5.</li>
+                        <li><strong>Comunicación asíncrona</strong> entre frontend y backend mediante <code>fetch</code> y JSON.</li>
+                        <li>Validaciones automáticas en tiempo real en cada módulo.</li>
+                        <li>Mensajería dinámica con <strong>alerts personalizados</strong> según respuesta de la API.</li>
+                        <li>Arquitectura separada por capas: presentación, lógica de negocio y acceso a datos.</li>
+                    </ul>
+
+                    <h5 class="text-info mt-4 text-center">🔐 Seguridad y buenas prácticas</h5>
+                    <ul>
+                        <li>Autenticación basada en <strong>tokens</strong> almacenados de forma segura en el navegador.</li>
+                        <li>Control de errores robusto en el manejo de peticiones y respuestas.</li>
+                        <li>Gestión eficiente de sesiones y validaciones previas al consumo de APIs externas.</li>
+                    </ul>
+
+                        <div class="col-md-6 my-5 text-center">
+                            <img class="img-fluid mx-auto d-block rounded" 
+                                src="images/SIstemaFacturacion/Tokens.png" 
+                                alt="Tokens">
+                        </div>
+
+                    <h5 class="text-info mt-4 text-center">📱 Interfaz adaptativa</h5>
+                    <p class="text-center">
+                        La aplicación se adapta a cualquier dispositivo gracias a un diseño 
+                        <strong>totalmente responsive</strong> basado en Bootstrap, 
+                        garantizando una experiencia fluida tanto en escritorio como en móvil.
+                    </p>
+                    <div class="col-md-6 my-5 text-center">
+                        <iframe width="100%" height="315" 
+                            src="https://www.youtube.com/embed/EAQlvuJ_RFQ?si=cwetbDGIGUfccKw4" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; 
+                            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                            web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+							

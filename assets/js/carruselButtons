@@ -1,0 +1,10 @@
+document.querySelectorAll('.switch-btn').forEach(btn => {
+    btn.addEventListener('shown.bs.tab', () => {
+        const target = btn.dataset.bsTarget === '#software' 
+            ? '#CarouselAplicaciones' 
+            : '#CarouselVideojuegos';
+        document.querySelectorAll('.carousel-side-btn').forEach(b => {
+            b.setAttribute('data-bs-target', target);
+        });
+    });
+});
