@@ -1,0 +1,134 @@
+<!-- SurtiNoxSmart - Gestión Inteligente para Tiendas de Barrio -->
+
+<section class="container my-5">
+    <div class="card shadow rounded bg-transparent text-white">
+        <div class="row g-0 align-items-center">
+            <!-- Imagen principal del proyecto -->
+            <div class="col-12 text-center">
+                <img src="images/SurtiNoxSmart/Principal.png"
+                    alt="SurtiNoxSmart - App de gestión para tiendas"
+                    class="img-fluid mx-auto d-block rounded"
+                    style="width: 400px; height: 200px; object-fit: cover; border-radius: 8px;" />
+                <!-- 📌 Espacio para una captura de pantalla de la app (pantalla principal o dashboard) -->
+            </div>
+
+            <!-- Contenido del proyecto -->
+            <div class="col-12">
+                <div class="card-body">
+                    <h2 class="card-title text-info">📱 SurtiNoxSmart — Gestión Integral para Tiendas de Barrio</h2>
+                    <p class="card-text">
+                        <strong>SurtiNoxSmart</strong> es una aplicación móvil nativa para Android desarrollada con 
+                        <strong>Kotlin</strong> y <strong>Jetpack Compose</strong> que permite a los dueños de tiendas 
+                        de barrio administrar su negocio de forma sencilla, rápida y sin necesidad de conexión a internet. 
+                        La app gestiona <strong>inventario, ventas, ganancias, reportes, alertas y configuración</strong> 
+                        desde un solo lugar, con una interfaz moderna y fluida.
+                    </p>
+
+                    <a href="https://github.com/tu-usuario/surtinoxsmart"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline-info mt-2">
+                        Ver código en GitHub
+                    </a>
+
+                    <div style="height: 50px;"></div>
+
+                    <h4 class="text-info">🏗️ Arquitectura y tecnologías</h4>
+                    <ul>
+                        <li><strong>Lenguaje:</strong> Kotlin (100% moderno y seguro).</li>
+                        <li><strong>UI:</strong> Jetpack Compose (declarativa y reactiva).</li>
+                        <li><strong>Arquitectura:</strong> MVVM + Clean Architecture (modular por features).</li>
+                        <li><strong>Persistencia:</strong> Room (SQLite) con TypeConverters personalizados.</li>
+                        <li><strong>Estado:</strong> StateFlow y corrutinas para manejo reactivo.</li>
+                        <li><strong>Inyección de dependencias:</strong> Manual con factories (simple y transparente).</li>
+                    </ul>
+
+                    <div class="col-md-6 my-5 text-center">
+                        <img class="img-fluid mx-auto d-block rounded"
+                            src="images/SurtiNoxSmart/Arquitectura.png"
+                            alt="Diagrama de arquitectura MVVM + Clean Architecture">
+                        <!-- 📌 Espacio para un diagrama de arquitectura o estructura de carpetas -->
+                    </div>
+
+                    <h5 class="text-info mt-4">🔹 Módulos funcionales</h5>
+                    <ul>
+                        <li><strong>📦 Inventario:</strong> CRUD de productos, búsqueda por nombre normalizado (sin tildes), paginación, ajuste rápido de stock y compra a proveedor con cálculo automático de precios.</li>
+                        <li><strong>🛒 Ventas:</strong> Gestión de cuentas (mesas/clientes), agregar productos con selector de cantidad, cierre de cuenta y movimiento automático a historial.</li>
+                        <li><strong>📊 Ganancias:</strong> Cálculo de utilidad neta (ventas - costo - gastos), filtro por período, CRUD de gastos operativos y gráficos interactivos (barras agrupadas, pastel).</li>
+                        <li><strong>📈 Reportes:</strong> Ventas por período/categoría, top productos, ventas por hora, utilidad neta, margen de ganancia, gastos unificados, stock bajo/sin stock y rotación de inventario.</li>
+                        <li><strong>🔔 Alertas:</strong> Notificaciones de stock bajo, sin stock y gastos próximos/vencidos, con notificaciones push locales programadas con WorkManager.</li>
+                        <li><strong>⚙️ Configuración:</strong> Datos del negocio, tema claro/oscuro, activación de notificaciones, exportación/importación de base de datos y versión de la app.</li>
+                    </ul>
+
+                    <div class="col-md-6 my-5 text-center">
+                        <img class="img-fluid mx-auto d-block rounded"
+                            src="images/SurtiNoxSmart/Modulos.png"
+                            alt="Pantallas de la app (inventario, ventas, ganancias, reportes)">
+                        <!-- 📌 Espacio para un collage de capturas de pantalla de los módulos principales -->
+                    </div>
+
+                    <h5 class="text-info mt-4">🎨 Componentes reutilizables y UX</h5>
+                    <ul>
+                        <li><strong>CampoTexto:</strong> componente de entrada con validaciones y sugerencias en tiempo real.</li>
+                        <li><strong>PeriodoDropdown:</strong> selector de período (hoy, semana, mes, etc.) centralizado.</li>
+                        <li><strong>ReporteSeccion:</strong> componente único para todos los reportes (resumen + gráfico + lista).</li>
+                        <li><strong>TarjetaResumen:</strong> card con icono, total y color dinámico según el valor.</li>
+                        <li><strong>GraficoBarrasAgrupadas:</strong> gráfico con tres series (ventas, costo, gastos) para evolución temporal.</li>
+                        <li><strong>Normalizador:</strong> función para eliminar acentos y caracteres especiales en búsquedas de productos.</li>
+                    </ul>
+
+                    <div class="col-md-6 my-5 text-center">
+                        <img class="img-fluid mx-auto d-block rounded"
+                            src="images/SurtiNoxSmart/Componentes.png"
+                            alt="Componentes de la UI (tarjetas, gráficos, dropdowns)">
+                        <!-- 📌 Espacio para imágenes de los componentes UI (tarjetas, gráficos, diálogos) -->
+                    </div>
+
+                    <h5 class="text-info mt-4">🔐 Seguridad y rendimiento</h5>
+                    <ul>
+                        <li><strong>Base de datos local:</strong> SQLite con Room, optimizada para consultas rápidas y sin dependencia de internet.</li>
+                        <li><strong>Normalización de texto:</strong> búsquedas insensibles a tildes y mayúsculas.</li>
+                        <li><strong>Paginación:</strong> carga por lotes de 50 productos para evitar bloqueos.</li>
+                        <li><strong>Estado reactivo:</strong> StateFlow y corrutinas para una experiencia fluida.</li>
+                        <li><strong>Notificaciones push:</strong> WorkManager para revisar alertas en segundo plano y mostrar notificaciones.</li>
+                        <li><strong>Exportación/Importación:</strong> copia de seguridad de la base de datos en almacenamiento externo.</li>
+                    </ul>
+
+                    <div class="col-md-6 my-5 text-center">
+                        <img class="img-fluid mx-auto d-block rounded"
+                            src="images/SurtiNoxSmart/Seguridad.png"
+                            alt="Notificaciones push y exportación de datos">
+                        <!-- 📌 Espacio para imagen de notificaciones o pantalla de configuración -->
+                    </div>
+
+                    <h4 class="text-info text-center mt-5">🚀 Resultado y aprendizaje</h4>
+                    <p class="text-center">
+                        Este proyecto me permitió aplicar y consolidar mis conocimientos en <strong>Kotlin, Jetpack Compose, 
+                        Clean Architecture, Room, StateFlow, WorkManager</strong> y diseño de interfaces modernas. 
+                        Además, trabajé en la <strong>refactorización de un monolito a una arquitectura modular</strong>, 
+                        logrando un código más limpio, testeable y mantenible. La aplicación está completamente funcional 
+                        y lista para ser utilizada en entornos reales de comercio local.
+                    </p>
+
+                    <div class="col-md-6 my-5 text-center">
+                        <iframe width="100%" height="315" 
+                            src="https://www.youtube.com/embed/tu-video-id" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; 
+                            autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                            web-share" referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                        <!-- 📌 Espacio para un video demo de la app (opcional) -->
+                    </div>
+
+                    <h5 class="text-info text-center mt-4">💡 Próximos pasos</h5>
+                    <p class="text-center">
+                        Mejorar la experiencia de usuario, añadir sincronización en la nube (Firebase) y ampliar los 
+                        reportes con más gráficos y análisis predictivos. También planeo preparar la app para 
+                        publicación en Google Play Store.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
