@@ -97,12 +97,12 @@
 }
 
 .carousel-side-btn.left {
-    left: 180px;
+    left: clamp(10px, calc(50vw - 480px), 50vw);
     border-radius: 12px 0 0 12px;
 }
 
 .carousel-side-btn.right {
-    right: 180px;
+    right: clamp(10px, calc(50vw - 480px), 50vw);
     border-radius: 0 12px 12px 0;
 }
 
